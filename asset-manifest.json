@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/greenrockweb/static/css/main.8a685450.css",
-    "main.js": "/greenrockweb/static/js/main.c9a138bb.js",
+    "main.js": "/greenrockweb/static/js/main.f04345a3.js",
     "static/js/453.7a41496b.chunk.js": "/greenrockweb/static/js/453.7a41496b.chunk.js",
     "index.html": "/greenrockweb/index.html",
     "main.8a685450.css.map": "/greenrockweb/static/css/main.8a685450.css.map",
-    "main.c9a138bb.js.map": "/greenrockweb/static/js/main.c9a138bb.js.map",
+    "main.f04345a3.js.map": "/greenrockweb/static/js/main.f04345a3.js.map",
     "453.7a41496b.chunk.js.map": "/greenrockweb/static/js/453.7a41496b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a685450.css",
-    "static/js/main.c9a138bb.js"
+    "static/js/main.f04345a3.js"
   ]
 }

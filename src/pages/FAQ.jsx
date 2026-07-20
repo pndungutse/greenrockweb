@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ensureTemplateScripts } from '../utils/strnixScripts';
+import { asset } from '../utils/publicUrl';
 
 const faqItems = [
   {
@@ -89,7 +90,7 @@ const FAQ = () => {
       <section className="page-banner">
         <div
           className="image-layer"
-          style={{ backgroundImage: 'url(/assets/images/background/banner-bg-8.jpg)' }}
+          style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-8.jpg')})` }}
         ></div>
         <div className="auto-container">
           <div className="breadcrumb-box">

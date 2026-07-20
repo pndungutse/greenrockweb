@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { asset } from '../utils/publicUrl';
 
 const Home = () => {
   // Owl / Fancybox / WOW re-init is handled globally in App (StrnixRouteEffects).
@@ -48,7 +49,7 @@ const Home = () => {
 		<div className="banner-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
 			{/* Slide Item */}
 			<div className="slide-item">
-				<div className="image-layer" style={{ backgroundImage: "url('/assets/images/main-slider/6.jpg')" }}></div>
+				<div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/main-slider/6.jpg')})` }}></div>
                 <div className="curve-layer"></div>
 
 				<div className="auto-container">
@@ -74,7 +75,7 @@ const Home = () => {
 
 			{/* Slide Item */}
             <div className="slide-item">
-                <div className="image-layer" style={{ backgroundImage: "url('/assets/images/main-slider/15.avif')" }}></div>
+                <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/main-slider/15.avif')})` }}></div>
                 <div className="curve-layer"></div>
 
                 <div className="auto-container">
@@ -100,7 +101,7 @@ const Home = () => {
 
             {/* Slide Item */}
             <div className="slide-item">
-                <div className="image-layer" style={{ backgroundImage: "url('/assets/images/main-slider/8.jpg')" }}></div>
+                <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/main-slider/8.jpg')})` }}></div>
                 <div className="curve-layer"></div>
 
                 <div className="auto-container">
@@ -157,7 +158,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="image-box wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1500ms">
-                            <figure className="image"><img src="/assets/images/resource/ImageAlone.jpg" alt="" /></figure>
+                            <figure className="image"><img src={asset('/assets/images/resource/ImageAlone.jpg')} alt="" /></figure>
                         </div>
                     </div>
                 </div>
@@ -197,7 +198,7 @@ const Home = () => {
         <div className="bg-layer"></div>
 
         <div className="curve-layer">
-            <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-7.jpg)" }}></div>
+            <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-7.jpg')})` }}></div>
         </div>
 
         <div className="auto-container">
@@ -393,12 +394,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/5.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/5.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/5.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/5.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -422,12 +423,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/6.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/6.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/6.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/6.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -451,12 +452,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/7.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/7.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/7.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/7.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -480,12 +481,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/5.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/5.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/5.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/5.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -509,12 +510,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/6.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/6.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/6.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/6.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -538,12 +539,12 @@ const Home = () => {
                                 <div className="inner-box">
                                     <div className="image-box">
                                         <div className="image">
-                                            <img src="/assets/images/gallery/7.jpg" alt="" />
+                                            <img src={asset('/assets/images/gallery/7.jpg')} alt="" />
                                         </div>
                                         <div className="overlay">
                                             <div className="over-inner">
                                                 <div className="zoom-btn">
-                                                    <a href="/assets/images/gallery/7.jpg" className="lightbox-image" data-fancybox="project-gallery">
+                                                    <a href={asset('/assets/images/gallery/7.jpg')} className="lightbox-image" data-fancybox="project-gallery">
                                                         <span className="fa fa-search-plus"></span>
                                                     </a>
                                                 </div>
@@ -573,7 +574,7 @@ const Home = () => {
 
     {/*Featured Section*/}
     <section className="featured-section">
-        <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-8.jpg)" }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-8.jpg')})` }}></div>
         <div className="auto-container">
             <div className="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
                 <div className="row clearfix">
@@ -696,7 +697,7 @@ const Home = () => {
                         <div className="inner">
                             <div className="testi-info">
                                 <div className="testi-thumb">
-                                    <img src="/assets/images/resource/author-thumb-5.jpg" alt="" />
+                                    <img src={asset('/assets/images/resource/author-thumb-5.jpg')} alt="" />
                                 </div>
                                 <div className="info"><span>General Contractors</span></div>
                                 <div className="designation">Client Partners</div>
@@ -711,7 +712,7 @@ const Home = () => {
                         <div className="inner">
                             <div className="testi-info">
                                 <div className="testi-thumb">
-                                    <img src="/assets/images/resource/author-thumb-5.jpg" alt="" />
+                                    <img src={asset('/assets/images/resource/author-thumb-5.jpg')} alt="" />
                                 </div>
                                 <div className="info"><span>Developers</span></div>
                                 <div className="designation">Client Partners</div>
@@ -726,7 +727,7 @@ const Home = () => {
                         <div className="inner">
                             <div className="testi-info">
                                 <div className="testi-thumb">
-                                    <img src="/assets/images/resource/author-thumb-5.jpg" alt="" />
+                                    <img src={asset('/assets/images/resource/author-thumb-5.jpg')} alt="" />
                                 </div>
                                 <div className="info"><span>Government &amp; Public Agencies</span></div>
                                 <div className="designation">Client Partners</div>
@@ -745,7 +746,7 @@ const Home = () => {
 
     {/*Contact Section*/}
     <section className="contact-section">
-        <div className="map-image-layer" style={{ backgroundImage: "url(/assets/images/background/map-bg.jpg)" }}></div>
+        <div className="map-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/map-bg.jpg')})` }}></div>
         <div className="auto-container">
             <div className="content-box clearfix wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
                 <div className="form-box clearfix">
@@ -784,12 +785,12 @@ const Home = () => {
                         </form>
                     </div>
                 </div>
-                <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-9.jpg)" }}>
+                <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-9.jpg')})` }}>
                     <div className="info-box wow fadeInUp" data-wow-delay="1000ms"  data-wow-duration="1000ms">
                         <div className="subtitle">Call Us 24/7 For Support</div>
                         <div className="phone">
                             <span className="icon">
-                                <img src="/assets/images/icons/icon-call-1.png" alt="" />
+                                <img src={asset('/assets/images/icons/icon-call-1.png')} alt="" />
                             </span>
                             <a href="tel:(949)-771-4943">(949) 771-4943</a>
                         </div>
@@ -821,7 +822,7 @@ const Home = () => {
                     <div className="inner-box">
                         <div className="image-box">
                             <figure className="image">
-                                <a href="blog-single.html"><img src="/assets/images/resource/blog-image-1.jpg" alt="" /></a></figure>
+                                <a href="blog-single.html"><img src={asset('/assets/images/resource/blog-image-1.jpg')} alt="" /></a></figure>
                             <div className="post-date">
                                 <span className="day">18</span><span className="month">Sep</span>
                             </div>
@@ -841,7 +842,7 @@ const Home = () => {
                     <div className="inner-box">
                         <div className="image-box">
                             <figure className="image">
-                                <a href="blog-single.html"><img src="/assets/images/resource/blog-image-2.jpg" alt="" /></a></figure>
+                                <a href="blog-single.html"><img src={asset('/assets/images/resource/blog-image-2.jpg')} alt="" /></a></figure>
                             <div className="post-date">
                                 <span className="day">10</span><span className="month">Sep</span>
                             </div>
@@ -861,7 +862,7 @@ const Home = () => {
                     <div className="inner-box">
                         <div className="image-box">
                             <figure className="image">
-                                <a href="blog-single.html"><img src="/assets/images/resource/blog-image-3.jpg" alt="" /></a></figure>
+                                <a href="blog-single.html"><img src={asset('/assets/images/resource/blog-image-3.jpg')} alt="" /></a></figure>
                             <div className="post-date">
                                 <span className="day">31</span><span className="month">Aug</span>
                             </div>

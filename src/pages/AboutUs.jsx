@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Facts from '../components/Facts';
+import { asset } from '../utils/publicUrl';
 
 const AboutUs = () => {
     return (
@@ -40,7 +41,7 @@ const AboutUs = () => {
 
     {/* Page Banner Section */}
     <section className="page-banner">
-        <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/banner-bg-1.jpg)" }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-1.jpg')})` }}></div>
 
         <div className="auto-container">
             <div className="breadcrumb-box">
@@ -61,8 +62,8 @@ const AboutUs = () => {
 	{/*About Section*/}
     <section className="about-section-four">
 
-        <div className="pattern-image-left"><img src="/assets/images/background/pattern-image-1.png" alt="" /></div>
-        <div className="pattern-image-right"><img src="/assets/images/background/pattern-image-2.png" alt="" /></div>
+        <div className="pattern-image-left"><img src={asset('/assets/images/background/pattern-image-1.png')} alt="" /></div>
+        <div className="pattern-image-right"><img src={asset('/assets/images/background/pattern-image-2.png')} alt="" /></div>
 
         <div className="auto-container">
         	<div className="row clearfix">
@@ -100,7 +101,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src="/assets/images/resource/featured-image-32.jpg" alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/featured-image-32.jpg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">01</div>
@@ -113,7 +114,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="300ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src="/assets/images/resource/featured-image-33.jpg" alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/featured-image-33.jpg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">02</div>
@@ -126,7 +127,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src="/assets/images/resource/featured-image-34.jpg" alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/featured-image-34.jpg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">03</div>
@@ -174,7 +175,7 @@ const AboutUs = () => {
                     {/*Text Over Block*/}
                     <div className="text-over-block">
                         <div className="inner-box">
-                            <div className="block-image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-15.jpg)" }}></div>
+                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-15.jpg')})` }}></div>
                             <div className="title">
                                 <span className="icon flaticon-solar-panel"></span>
                                 <span className="txt">our Mission</span>
@@ -193,7 +194,7 @@ const AboutUs = () => {
                     {/*Text Over Block*/}
                     <div className="text-over-block">
                         <div className="inner-box">
-                            <div className="block-image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-16.jpg)" }}></div>
+                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-16.jpg')})` }}></div>
                             <div className="title">
                                 <span className="icon flaticon-trees"></span>
                                 <span className="txt">innovation</span>
@@ -344,7 +345,7 @@ const AboutUs = () => {
                 <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src="/assets/images/resource/team-image-1.jpg" alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-1.jpg')} alt="" /></a></div>
 
                             <div className="social-links">
                                 <ul>
@@ -366,7 +367,7 @@ const AboutUs = () => {
                 <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src="/assets/images/resource/team-image-2.jpg" alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-2.jpg')} alt="" /></a></div>
                             <div className="social-links">
                                 <ul>
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>
@@ -387,7 +388,7 @@ const AboutUs = () => {
                 <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src="/assets/images/resource/team-image-3.jpg" alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-3.jpg')} alt="" /></a></div>
                             <div className="social-links">
                                 <ul>
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>
@@ -408,7 +409,7 @@ const AboutUs = () => {
                 <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src="/assets/images/resource/team-image-4.jpg" alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-4.jpg')} alt="" /></a></div>
                             <div className="social-links">
                                 <ul>
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>

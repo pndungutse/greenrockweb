@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { asset } from '../utils/publicUrl';
 
 const Header = () => {
     const { pathname } = useLocation();
@@ -16,7 +17,7 @@ const Header = () => {
                             <div className="inner clearfix">
                                 {/*Logo*/}
                                 <div className="logo-box">
-                                    <div className="logo"><Link to="/" title="Greenrock Engineering and Design Services"><img src="/assets/images/logo-3.png" alt="Greenrock Engineering and Design Services" title="Greenrock Engineering and Design Services" /></Link></div>
+                                    <div className="logo"><Link to="/" title="Greenrock Engineering and Design Services"><img src={asset('/assets/images/logo-3.png')} alt="Greenrock Engineering and Design Services" title="Greenrock Engineering and Design Services" /></Link></div>
                                 </div>
                                 <div className="right-info clearfix">
                                     {/*Info*/}
@@ -25,7 +26,7 @@ const Header = () => {
                                         <div className="info-block">
                                             <div className="icon-box">
                                                 <span className="icon">
-                                                    <img src="/assets/images/icons/icon-call-1.png" alt="" />
+                                                    <img src={asset('/assets/images/icons/icon-call-1.png')} alt="" />
                                                 </span>
                                             </div>
                                             <strong><a href="tel:(949)-771-4943">(949) 771-4943</a></strong>
@@ -37,7 +38,7 @@ const Header = () => {
                                         <div className="info-block">
                                             <div className="icon-box">
                                                 <span className="icon">
-                                                    <img src="/assets/images/icons/icon-mail-1.png" alt="" />
+                                                    <img src={asset('/assets/images/icons/icon-mail-1.png')} alt="" />
                                                 </span>
                                             </div>
                                             <strong><a href="mailto:info@greenrockeng.com">info@greenrockeng.com</a></strong>
@@ -124,7 +125,7 @@ const Header = () => {
                     <div className="auto-container clearfix">
                         {/*Logo*/}
                         <div className="logo pull-left">
-                            <Link to="/" title=""><img src="/assets/images/sticky-logo.png" alt="" title="" /></Link>
+                            <Link to="/" title=""><img src={asset('/assets/images/sticky-logo.png')} alt="" title="" /></Link>
                         </div>
                         {/*Right Col*/}
                         <div className="pull-right">
@@ -142,7 +143,7 @@ const Header = () => {
                     <div className="close-btn"><span className="icon flaticon-cancel"></span></div>
 
                     <nav className="menu-box">
-                        <div className="nav-logo"><Link to="/"><img src="/assets/images/nav-logo.png" alt="" title="" /></Link></div>
+                        <div className="nav-logo"><Link to="/"><img src={asset('/assets/images/nav-logo.png')} alt="" title="" /></Link></div>
                         <div className="menu-outer">{/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}</div>
                         {/*Social Links*/}
                         <div className="social-links">

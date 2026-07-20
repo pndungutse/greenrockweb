@@ -1,23 +1,26 @@
+import { asset } from './publicUrl';
+
 // Same script stack as t.commonsupport.com/strnix/index-4.html.
+// Paths must use PUBLIC_URL so GitHub Pages (/greenrockweb/...) can load them.
 const TEMPLATE_SCRIPTS = [
-  '/assets/js/jquery.js',
-  '/assets/js/popper.min.js',
-  '/assets/js/bootstrap.min.js',
-  '/assets/js/jquery-ui.js',
-  '/assets/js/jquery.fancybox.js',
-  '/assets/js/owl.js',
-  '/assets/js/appear.js',
-  '/assets/js/wow.js',
-  '/assets/js/scrollbar.js',
-  '/assets/js/validate.js',
-  '/assets/js/paroller.js',
-  '/assets/js/element-in-view.js',
-  '/assets/js/custom-script.js',
+  asset('/assets/js/jquery.js'),
+  asset('/assets/js/popper.min.js'),
+  asset('/assets/js/bootstrap.min.js'),
+  asset('/assets/js/jquery-ui.js'),
+  asset('/assets/js/jquery.fancybox.js'),
+  asset('/assets/js/owl.js'),
+  asset('/assets/js/appear.js'),
+  asset('/assets/js/wow.js'),
+  asset('/assets/js/scrollbar.js'),
+  asset('/assets/js/validate.js'),
+  asset('/assets/js/paroller.js'),
+  asset('/assets/js/element-in-view.js'),
+  asset('/assets/js/custom-script.js'),
 ];
 
 const GOOGLE_MAPS_SRC =
   'https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJe2MPH8B-gLzZu5QI0Alc73nvkLuuqQ';
-const MAP_SCRIPT_SRC = '/assets/js/map-script.js';
+const MAP_SCRIPT_SRC = asset('/assets/js/map-script.js');
 
 let scriptsPromise = null;
 let mapScriptsPromise = null;
@@ -56,10 +59,14 @@ export function hideStrnixPreloader() {
 export function ensureTemplateScripts() {
   if (!scriptsPromise) {
     scriptsPromise = (async () => {
-      for (const src of TEMPLATE_SCRIPTS) {
-        await loadScript(src);
+      try {
+        for (const src of TEMPLATE_SCRIPTS) {
+          await loadScript(src);
+        }
+      } finally {
+        // Always clear the spinner — even if a script 404s on deploy.
+        hideStrnixPreloader();
       }
-      hideStrnixPreloader();
     })();
   }
   return scriptsPromise;

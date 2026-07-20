@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import FAQ from './pages/FAQ';
 import { setupStrnixPageEffects } from './utils/strnixScripts';
+import { PUBLIC_URL } from './utils/publicUrl';
 
 /** Re-init Owl / Fancybox / WOW / counters on every SPA route change. */
 function StrnixRouteEffects() {
@@ -37,7 +38,7 @@ function App() {
       <div className="page-wrapper">
         {/* Single app-level preloader (pages must not remount their own). */}
         <div className="preloader"><div className="icon"></div></div>
-        <BrowserRouter>
+        <BrowserRouter basename={PUBLIC_URL}>
         <StrnixRouteEffects />
         <Header />
         <Routes>

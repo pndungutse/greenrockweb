@@ -1,46 +1,47 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { asset } from '../utils/publicUrl';
 
 const serviceCards = [
     {
         title: 'Architecture',
         icon: 'flaticon-settings',
-        image: '/assets/images/resource/featured-image-18.jpg',
+        image: asset('/assets/images/resource/featured-image-18.jpg'),
         text: 'Human-centered, energy-conscious building design — spaces that perform for people and tread lightly on the environment.',
         delay: '0ms',
     },
     {
         title: 'Civil Engineering',
         icon: 'flaticon-honeycomb',
-        image: '/assets/images/resource/featured-image-19.jpg',
+        image: asset('/assets/images/resource/featured-image-19.jpg'),
         text: 'Site development, grading, drainage, and infrastructure that manage water wisely and support resilient communities.',
         delay: '300ms',
     },
     {
         title: 'Structural Engineering',
         icon: 'flaticon-solar-energy-4',
-        image: '/assets/images/resource/featured-image-20.jpg',
+        image: asset('/assets/images/resource/featured-image-20.jpg'),
         text: 'Safe, efficient structural systems that use material intelligently — cutting embodied carbon without compromising strength.',
         delay: '600ms',
     },
     {
         title: 'Electrical Engineering',
         icon: 'flaticon-water-drop',
-        image: '/assets/images/resource/featured-image-21.jpg',
+        image: asset('/assets/images/resource/featured-image-21.jpg'),
         text: 'Power distribution, lighting, and low-voltage systems engineered for efficiency, resilience, and lower operating cost.',
         delay: '0ms',
     },
     {
         title: 'Mechanical Engineering',
         icon: 'flaticon-save',
-        image: '/assets/images/resource/featured-image-22.jpg',
+        image: asset('/assets/images/resource/featured-image-22.jpg'),
         text: 'HVAC, plumbing, and building systems designed around comfort and conservation — lowering emissions and lifecycle cost.',
         delay: '300ms',
     },
     {
         title: 'Design Services',
         icon: 'flaticon-chimney-1',
-        image: '/assets/images/resource/featured-image-23.jpg',
+        image: asset('/assets/images/resource/featured-image-23.jpg'),
         text: 'Concept development, planning, and complete documentation that turn project vision into clear, buildable, sustainable plans.',
         delay: '600ms',
     },
@@ -84,7 +85,7 @@ const Services = () => {
 
     {/* Page Banner Section */}
     <section className="page-banner">
-        <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/banner-bg-2.jpg)" }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-2.jpg')})` }}></div>
 
         <div className="auto-container">
             <div className="breadcrumb-box">
@@ -170,7 +171,7 @@ const Services = () => {
                         {/*Image Column*/}
                         <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                             <div className="inner">
-                                <div className="image"><img src="/assets/images/resource/featured-image-3.jpg" alt="" /></div>
+                                <div className="image"><img src={asset('/assets/images/resource/featured-image-3.jpg')} alt="" /></div>
                                 <div className="icon-box"><span className="flaticon-power-7"></span></div>
                             </div>
                         </div>
@@ -198,7 +199,7 @@ const Services = () => {
                         {/*Image Column*/}
                         <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
                             <div className="inner">
-                                <div className="image"><img src="/assets/images/resource/featured-image-4.jpg" alt="" /></div>
+                                <div className="image"><img src={asset('/assets/images/resource/featured-image-4.jpg')} alt="" /></div>
                                 <div className="icon-box"><span className="flaticon-power-2"></span></div>
                             </div>
                         </div>
@@ -226,7 +227,7 @@ const Services = () => {
                         {/*Image Column*/}
                         <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                             <div className="inner">
-                                <div className="image"><img src="/assets/images/resource/featured-image-5.jpg" alt="" /></div>
+                                <div className="image"><img src={asset('/assets/images/resource/featured-image-5.jpg')} alt="" /></div>
                                 <div className="icon-box"><span className="flaticon-energy-1"></span></div>
                             </div>
                         </div>
@@ -254,8 +255,8 @@ const Services = () => {
 
     {/*Enquiry Section*/}
     <section className="enquiry-section">
-        {/* <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-2.jpg)" }}></div> */}
-        <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/ImageBackground2.avif)" }}></div>
+        {/* <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-2.jpg')})` }}></div> */}
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/ImageBackground2.avif')})` }}></div>
 
         <div className="auto-container">
             <div className="sec-title light-title centered wow fadeInDown" data-wow-delay="0ms"  data-wow-duration="1000ms">
@@ -334,7 +335,7 @@ const Services = () => {
                     <div className="slide-item">
                         <div className="inner">
                             <div className="testi-thumb">
-                                <img src="/assets/images/resource/author-thumb-6.jpg" alt="" />
+                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
                                 <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
                                 <span className="quote-icon right flaticon-straight-quotes"></span>
                             </div>
@@ -348,7 +349,7 @@ const Services = () => {
                     <div className="slide-item">
                         <div className="inner">
                             <div className="testi-thumb">
-                                <img src="/assets/images/resource/author-thumb-6.jpg" alt="" />
+                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
                                 <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
                                 <span className="quote-icon right flaticon-straight-quotes"></span>
                             </div>
@@ -362,7 +363,7 @@ const Services = () => {
                     <div className="slide-item">
                         <div className="inner">
                             <div className="testi-thumb">
-                                <img src="/assets/images/resource/author-thumb-6.jpg" alt="" />
+                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
                                 <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
                                 <span className="quote-icon right flaticon-straight-quotes"></span>
                             </div>
@@ -382,16 +383,16 @@ const Services = () => {
             <div className="auto-container">
                 {/*Sponsors Carousel*/}
                 <div className="sponsors-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "800":{ "items" : "3" }, "1024":{ "items" : "4" }, "1200":{ "items" : "5" }}}'>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/1-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/2-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/3-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/4-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/5-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/1-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/2-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/3-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/4-a.png" alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src="/assets/images/clients/5-a.png" alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/1-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/2-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/3-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/4-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/5-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/1-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/2-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/3-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/4-a.png')} alt="" /></a></figure></div>
+                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/5-a.png')} alt="" /></a></figure></div>
                 </div>
             </div>
         </div>

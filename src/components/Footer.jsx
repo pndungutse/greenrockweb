@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { asset } from '../utils/publicUrl';
 
 const Footer = () => {
     return (
@@ -15,7 +16,7 @@ const Footer = () => {
                             <div className="footer-column col-lg-4 col-md-5 col-sm-12">
                                 <div className="footer-widget about-widget">
                                     <div className="footer-logo-box">
-                                        <Link to="/" title="Greenrock Engineering and Design Services"><img src="/assets/images/footer-logo-3.png" alt="Greenrock Engineering and Design Services" title="Greenrock Engineering and Design Services" /></Link>
+                                        <Link to="/" title="Greenrock Engineering and Design Services"><img src={asset('/assets/images/footer-logo-3.png')} alt="Greenrock Engineering and Design Services" title="Greenrock Engineering and Design Services" /></Link>
                                     </div>
                                     <div className="about-text">Sustainable engineering and design consulting — architecture, civil, structural, electrical, mechanical, and design services under one roof.</div>
                                     <div className="footer-social">
@@ -84,7 +85,7 @@ const Footer = () => {
                                         <div className="info-block">
                                             <div className="icon-box">
                                                 <span className="icon">
-                                                    <img src="/assets/images/icons/icon-message-1.png" alt="" />
+                                                    <img src={asset('/assets/images/icons/icon-message-1.png')} alt="" />
                                                 </span>
                                             </div>
                                             <strong>Visit The Office</strong>
@@ -94,7 +95,7 @@ const Footer = () => {
                                         <div className="info-block">
                                             <div className="icon-box">
                                                 <span className="icon">
-                                                    <img src="/assets/images/icons/icon-call-1.png" alt="" />
+                                                    <img src={asset('/assets/images/icons/icon-call-1.png')} alt="" />
                                                 </span>
                                             </div>
                                             <strong>Phone Inquiry</strong>
@@ -106,7 +107,7 @@ const Footer = () => {
                                         <div className="info-block">
                                             <div className="icon-box">
                                                 <span className="icon">
-                                                    <img src="/assets/images/icons/icon-mail-1.png" alt="" />
+                                                    <img src={asset('/assets/images/icons/icon-mail-1.png')} alt="" />
                                                 </span>
                                             </div>
                                             <strong>Send Email</strong>

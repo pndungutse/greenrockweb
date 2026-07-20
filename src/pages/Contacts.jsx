@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { setupContactMap } from '../utils/strnixScripts';
+import { asset } from '../utils/publicUrl';
 
 const Contacts = () => {
     // Google Maps + map-script.js are not part of the home script stack.
@@ -57,7 +58,7 @@ const Contacts = () => {
 
                 {/* Page Banner Section */}
                 <section className="page-banner">
-                    <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/banner-bg-1.jpg)" }}></div>
+                    <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-1.jpg')})` }}></div>
 
                     <div className="auto-container">
                         <div className="breadcrumb-box">
@@ -84,7 +85,7 @@ const Contacts = () => {
                                 {/*Info Block*/}
                                 <div className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
                                     <div className="inner">
-                                        <div className="icon"><img src="/assets/images/icons/icon-message-1.png" alt="" /></div>
+                                        <div className="icon"><img src={asset('/assets/images/icons/icon-message-1.png')} alt="" /></div>
                                         <strong>Visit The Office</strong>
                                         <ul className="info">
                                             <li>greenrockeng.com</li>
@@ -94,7 +95,7 @@ const Contacts = () => {
                                 {/*Info Block*/}
                                 <div className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
                                     <div className="inner">
-                                        <div className="icon"><img src="/assets/images/icons/icon-call-1.png" alt="" /></div>
+                                        <div className="icon"><img src={asset('/assets/images/icons/icon-call-1.png')} alt="" /></div>
                                         <strong>Phone Inquiry</strong>
                                         <ul className="info">
                                             <li><a href="tel:(949)-771-4943">(949) 771-4943</a></li>
@@ -104,7 +105,7 @@ const Contacts = () => {
                                 {/*Info Block*/}
                                 <div className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms">
                                     <div className="inner">
-                                        <div className="icon"><img src="/assets/images/icons/icon-mail-1.png" alt="" /></div>
+                                        <div className="icon"><img src={asset('/assets/images/icons/icon-mail-1.png')} alt="" /></div>
                                         <strong>Send Email</strong>
                                         <ul className="info">
                                             <li><a href="mailto:info@greenrockeng.com">info@greenrockeng.com</a></li>
@@ -151,12 +152,12 @@ const Contacts = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="image-layer" style={{ backgroundImage: "url(/assets/images/background/bg-image-9.jpg)" }}>
+                            <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-9.jpg')})` }}>
                                 <div className="info-box">
                                     <div className="subtitle">Call Us 24/7 For Support</div>
                                     <div className="phone">
                                         <span className="icon">
-                                            <img src="/assets/images/icons/icon-call-1.png" alt="" />
+                                            <img src={asset('/assets/images/icons/icon-call-1.png')} alt="" />
                                         </span>
                                         <a href="tel:(949)-771-4943">(949) 771-4943</a>
                                     </div>

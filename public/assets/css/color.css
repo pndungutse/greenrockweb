@@ -79,9 +79,65 @@ a:focus {
   box-shadow: 0 2px 16px rgba(15, 79, 43, 0.08);
 }
 
+.header-style-three .sticky-header .auto-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.header-style-three .sticky-header .logo,
+.fixed-header .sticky-header .logo {
+  float: none !important;
+  padding: 0 !important;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .header-style-three .sticky-header .logo img {
   max-height: 40px;
   width: auto;
+  display: block;
+}
+
+.header-style-three .sticky-header .pull-right {
+  float: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-style-three .sticky-header .main-menu,
+.header-style-three .sticky-header .main-menu .navigation {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.header-style-three .sticky-header .main-menu .navigation > li > a {
+  padding: 0 !important;
+  line-height: 1.2 !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Sticky nav: no active/current menu highlight */
+.sticky-header .main-menu .navigation > li > a {
+  color: var(--gr-ink) !important;
+}
+
+.sticky-header .main-menu .navigation > li.current > a,
+.header-style-three .sticky-header .main-menu .navigation > li.current > a {
+  color: var(--gr-ink) !important;
+}
+
+.sticky-header .main-menu .navigation > li.current > a:before {
+  display: none !important;
+  width: 0 !important;
+}
+
+.sticky-header .main-menu .navigation > li:hover > a {
+  color: var(--gr-green) !important;
 }
 
 /* —— Buttons —— */
@@ -270,9 +326,28 @@ a:focus {
   color: var(--gr-green-deep);
 }
 
-/* Soften dark overlays on banners */
-.banner-section.banner-three .slide-item .image-layer:before {
-  background: linear-gradient(90deg, rgba(15, 79, 43, 0.75) 0%, rgba(31, 138, 76, 0.35) 70%, rgba(31, 138, 76, 0.15) 100%) !important;
+.about-section-four .default-block .image-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--gr-paper);
+}
+
+.about-section-four .default-block .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-section-four .default-block .image-box .map-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0;
 }
 
 .banner-section.banner-three .content-box .text {

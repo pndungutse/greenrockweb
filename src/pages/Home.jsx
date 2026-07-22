@@ -67,10 +67,10 @@ const Home = () => {
                 <div className="inner">
                   <div className="text-content wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
                     <p>
-                      Greenrock Engineering and Design Services brings architecture, civil, structural, electrical, and mechanical engineering together under one practice. We focus on data centers, warehouses, distribution, and heavy industrial facilities where coordination across disciplines matters most.
+                      Greenrock Engineering and Design Services brings architecture, civil, structural, electrical, and mechanical engineering together under one practice. We focus on data centers, warehouses, distribution, and heavy industrial facilities where coordination across disciplines matters most. These projects demand tight integration of power, cooling, structure, and site design, and that is exactly how our team is built to work.
                     </p>
                     <p>
-                      Based in Phoenix, Arizona, we work as a single accountable team from concept through documentation, so conflicts are resolved on paper before they reach the site.
+                      Based in Phoenix, Arizona, we work as a single accountable team from concept through documentation, so conflicts are resolved on paper before they reach the site. Clients gain one point of contact, clearer drawings, and fewer surprises during construction. Whether the scope is a new facility or a complex renovation, we stay involved through coordination and delivery support so the design intent holds up in the field.
                     </p>
                   </div>
                   <div className="link-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="2000ms">

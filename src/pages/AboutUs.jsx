@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Facts from '../components/Facts';
 import { asset } from '../utils/publicUrl';
+import { setupContactMap } from '../utils/strnixScripts';
 
 const AboutUs = () => {
+    useEffect(() => {
+        let cancelled = false;
+
+        setupContactMap().catch((err) => {
+            if (!cancelled) {
+                // eslint-disable-next-line no-console
+                console.error(err);
+            }
+        });
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
+
     return (
         <div>
             <div className="page-wrapper">
@@ -101,7 +117,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src={asset('/assets/images/resource/featured-image-32.jpg')} alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/Integrated.jpeg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">01</div>
@@ -114,7 +130,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="300ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src={asset('/assets/images/resource/featured-image-33.jpg')} alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/Warehouse3.jpeg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">02</div>
@@ -127,7 +143,18 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src={asset('/assets/images/resource/featured-image-34.jpg')} alt="" /></a>
+                                <div
+                                    className="map-canvas"
+                                    data-zoom="11"
+                                    data-lat="33.4484"
+                                    data-lng="-112.0740"
+                                    data-type="roadmap"
+                                    data-hue="#1f8a4c"
+                                    data-title="Greenrock Engineering"
+                                    data-icon-path={asset('/assets/images/icons/map-marker.png')}
+                                    data-content="Phoenix, Arizona<br /><a href='mailto:info@greenrockeng.com'>info@greenrockeng.com</a>"
+                                >
+                                </div>
                             </div>
                             <div className="lower-box">
                                 <div className="count">03</div>

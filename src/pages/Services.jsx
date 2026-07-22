@@ -7,42 +7,42 @@ const serviceCards = [
         title: 'Architecture',
         icon: 'flaticon-settings',
         image: asset('/assets/images/resource/featured-image-18.jpg'),
-        text: 'Human-centered, energy-conscious building design — spaces that perform for people and tread lightly on the environment.',
+        text: 'Industrial and mission-critical building design for data centers, warehouses, and process facilities.',
         delay: '0ms',
     },
     {
         title: 'Civil Engineering',
         icon: 'flaticon-honeycomb',
         image: asset('/assets/images/resource/featured-image-19.jpg'),
-        text: 'Site development, grading, drainage, and infrastructure that manage water wisely and support resilient communities.',
+        text: 'Site development, grading, drainage, and infrastructure for large industrial campuses.',
         delay: '300ms',
     },
     {
         title: 'Structural Engineering',
-        icon: 'flaticon-solar-energy-4',
+        icon: 'flaticon-settings-2',
         image: asset('/assets/images/resource/featured-image-20.jpg'),
-        text: 'Safe, efficient structural systems that use material intelligently — cutting embodied carbon without compromising strength.',
+        text: 'Efficient structural systems for high-bay warehouses, heavy industrial plants, and critical facilities.',
         delay: '600ms',
     },
     {
         title: 'Electrical Engineering',
         icon: 'flaticon-water-drop',
         image: asset('/assets/images/resource/featured-image-21.jpg'),
-        text: 'Power distribution, lighting, and low-voltage systems engineered for efficiency, resilience, and lower operating cost.',
+        text: 'Power distribution, lighting, and low-voltage systems engineered for reliability and operating cost.',
         delay: '0ms',
     },
     {
         title: 'Mechanical Engineering',
         icon: 'flaticon-save',
         image: asset('/assets/images/resource/featured-image-22.jpg'),
-        text: 'HVAC, plumbing, and building systems designed around comfort and conservation — lowering emissions and lifecycle cost.',
+        text: 'HVAC, plumbing, and process support systems sized for industrial and data center performance.',
         delay: '300ms',
     },
     {
         title: 'Design Services',
         icon: 'flaticon-chimney-1',
         image: asset('/assets/images/resource/featured-image-23.jpg'),
-        text: 'Concept development, planning, and complete documentation that turn project vision into clear, buildable, sustainable plans.',
+        text: 'Concept development, planning, and documentation that turn project goals into clear, buildable plans.',
         delay: '600ms',
     },
 ];
@@ -109,7 +109,7 @@ const Services = () => {
             <div className="upper-content">
                 <div className="sec-title centered">
                     <h2>Six disciplines. One integrated practice.</h2>
-                    <div className="subtitle">And Engineering &amp; Design Consultancy Worldwide</div>
+                    <div className="subtitle">Architecture and engineering for industrial facilities</div>
                     <div className="bottom-dots clearfix">
                         <span className="dot line-dot"></span>
                         <span className="dot"></span>
@@ -117,7 +117,7 @@ const Services = () => {
                         <span className="dot"></span>
                     </div>
                 </div>
-                <div className="text">Greenrock unites architecture, civil, structural, electrical, and mechanical engineering with integrated design — delivering coordinated facilities that perform better and cost less to run.</div>
+                <div className="text">Greenrock unites architecture, civil, structural, electrical, and mechanical engineering with integrated design for data centers, warehouses, and heavy industrial projects.</div>
             </div>
 
             <div className="row clearfix">
@@ -153,8 +153,8 @@ const Services = () => {
                 ))}
             </div>
 
-            <div className="bottom-text wow fadeInUp" data-wow-delay="500ms"  data-wow-duration="2000ms">
-                <div className="text">We’re Renewable Energy Generation Compant - Need Emergency Help? <br />Call or email us 24/7 support team at <span className="phone"><a href="tel:+1-949-771-4943">(949) 771-4943</a></span></div>
+            <div className="bottom-text wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms">
+                <div className="text">Based in Phoenix, Arizona. Call or email us at <span className="phone"><a href="tel:+19497714943">(949) 771-4943</a></span></div>
             </div>
 
         </div>
@@ -180,10 +180,10 @@ const Services = () => {
                             <div className="inner clearfix">
                                 <div className="content">
                                     <div className="title">
-                                        <h2><span>Architecture &amp; Design Services</span></h2>
-                                        <div className="sub-text">Human-centered, energy-conscious building design</div>
+                                        <h2><span>Architecture and Design Services</span></h2>
+                                        <div className="sub-text">Industrial and mission-critical building design</div>
                                     </div>
-                                    <div className="text">Spaces that work beautifully for the people inside them and tread lightly on everything outside — backed by concept development, planning, and complete design documentation that turns vision into clear, buildable, sustainable plans.</div>
+                                    <div className="text">Concept development, planning, and documentation for data centers, warehouses, and industrial facilities that need clear, buildable drawings.</div>
                                     <div className="link-box">
                                         <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
                                     </div>
@@ -208,10 +208,10 @@ const Services = () => {
                             <div className="inner clearfix">
                                 <div className="content">
                                     <div className="title">
-                                        <h2><span>Civil &amp; Structural Engineering</span></h2>
-                                        <div className="sub-text">Resilient sites and efficient structures</div>
+                                        <h2><span>Civil and Structural Engineering</span></h2>
+                                        <div className="sub-text">Sites and structures for industrial campuses</div>
                                     </div>
-                                    <div className="text">Site development, grading, drainage, and infrastructure that manage water wisely — paired with safe, efficient structural systems that use material intelligently, cutting embodied carbon without compromising strength or code compliance.</div>
+                                    <div className="text">Site development, grading, drainage, and structural systems sized for high-bay warehouses, heavy industrial plants, and mission-critical facilities.</div>
                                     <div className="link-box">
                                         <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
                                     </div>
@@ -236,10 +236,10 @@ const Services = () => {
                             <div className="inner clearfix">
                                 <div className="content">
                                     <div className="title">
-                                        <h2><span>Electrical &amp; Mechanical Engineering</span></h2>
-                                        <div className="sub-text">Efficient power, lighting, and building systems</div>
+                                        <h2><span>Electrical and Mechanical Engineering</span></h2>
+                                        <div className="sub-text">Power, cooling, and building systems</div>
                                     </div>
-                                    <div className="text">Power distribution, lighting, and low-voltage systems engineered for efficiency, plus HVAC, plumbing, and building systems designed around comfort and conservation — lowering emissions and lifecycle cost from the first calculation.</div>
+                                    <div className="text">Power distribution, lighting, HVAC, and plumbing engineered for reliability, density, and operating cost on industrial and data center projects.</div>
                                     <div className="link-box">
                                         <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
                                     </div>
@@ -305,99 +305,15 @@ const Services = () => {
 
                 <div className="lower-text">
                     <div className="sub-title">
-                        <span className="txt">Or if you need quick assistance</span>
+                        <span className="txt">Or call us directly</span>
                     </div>
-                    <div className="info">Call Us 24/7 For Customer Support At <span className="icon"></span> <a href="tel:(949)-771-4943">(949) 771-4943</a></div>
+                    <div className="info">Phoenix, Arizona · <a href="tel:+19497714943">(949) 771-4943</a></div>
                 </div>
             </div>
 
         </div>
     </section>
-    
 
-    {/*Testimonial Section*/}
-    <section className="testimonial-section-three alternate">
-        <div className="auto-container">
-            <div className="sec-title centered">
-                <div className="subtitle">Engineering &amp; Design Consultancy</div>
-                <h2>What Clients Saying</h2>
-                <div className="bottom-dots clearfix">
-                    <span className="dot line-dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                </div>
-            </div>
-
-            <div className="content-box">
-                <div className="history-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" }, "800":{ "items" : "1" }, "1024":{ "items" : "1" }}}'>
-                    {/*Slide*/}
-                    <div className="slide-item">
-                        <div className="inner">
-                            <div className="testi-thumb">
-                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
-                                <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
-                                <span className="quote-icon right flaticon-straight-quotes"></span>
-                            </div>
-                            <div className="content">
-                                <div className="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure  dolor reprehenderit velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa enim ad minim veniam, quis nostrud exercitation ullamco laboris aliquip.</div>
-                            </div>
-                            <div className="info"><span>Camron White</span></div>
-                        </div>
-                    </div>
-                    {/*Slide*/}
-                    <div className="slide-item">
-                        <div className="inner">
-                            <div className="testi-thumb">
-                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
-                                <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
-                                <span className="quote-icon right flaticon-straight-quotes"></span>
-                            </div>
-                            <div className="content">
-                                <div className="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure  dolor reprehenderit velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa enim ad minim veniam, quis nostrud exercitation ullamco laboris aliquip.</div>
-                                <div className="info"><span>Camron White</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*Slide*/}
-                    <div className="slide-item">
-                        <div className="inner">
-                            <div className="testi-thumb">
-                                <img src={asset('/assets/images/resource/author-thumb-6.jpg')} alt="" />
-                                <span className="quote-icon left flaticon-blocks-with-angled-cuts"></span>
-                                <span className="quote-icon right flaticon-straight-quotes"></span>
-                            </div>
-                            <div className="content">
-                                <div className="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure  dolor reprehenderit velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa enim ad minim veniam, quis nostrud exercitation ullamco laboris aliquip.</div>
-                                <div className="info"><span>Camron White</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        {/*Sponsors*/}
-        <div className="sponsors-outer">
-            <div className="auto-container">
-                {/*Sponsors Carousel*/}
-                <div className="sponsors-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "800":{ "items" : "3" }, "1024":{ "items" : "4" }, "1200":{ "items" : "5" }}}'>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/1-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/2-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/3-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/4-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/5-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/1-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/2-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/3-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/4-a.png')} alt="" /></a></figure></div>
-                    <div className="slide-item"><figure className="image-box"><a href="#"><img src={asset('/assets/images/clients/5-a.png')} alt="" /></a></figure></div>
-                </div>
-            </div>
-        </div>
-
-    </section>
 </div>
         </div>
     );

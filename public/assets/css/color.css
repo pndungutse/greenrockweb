@@ -1,5 +1,290 @@
-/* Color File  */
+/* Greenrock brand theme — brighter, green-dominant overrides */
 
-a{
-	
+:root {
+  --gr-green: #1f8a4c;
+  --gr-green-dark: #166b3a;
+  --gr-green-deep: #0f4f2b;
+  --gr-green-soft: #e8f5ee;
+  --gr-green-mid: #4caf70;
+  --gr-ink: #1a2e22;
+  --gr-muted: #5a6b60;
+  --gr-paper: #f6faf7;
+  --gr-white: #ffffff;
+  --gr-line: #d5e6db;
+}
+
+body {
+  color: var(--gr-ink);
+  background: var(--gr-white);
+}
+
+a {
+  color: var(--gr-green-dark);
+}
+
+a:hover,
+a:focus {
+  color: var(--gr-green);
+}
+
+/* —— Header: light, minimal —— */
+.header-style-three .header-upper .inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 88px;
+  padding: 16px 0;
+}
+
+.header-style-three .header-upper .right-info {
+  display: none !important;
+}
+
+.header-style-three .header-lower .search-btn {
+  display: none !important;
+}
+
+.header-style-three .header-upper .logo img,
+.header-style-three .logo img {
+  max-height: 52px;
+  width: auto;
+}
+
+.header-style-three .header-lower {
+  background: var(--gr-green) !important;
+}
+
+.header-style-three .header-lower .main-menu .navigation > li > a,
+.header-style-three .header-lower .social-links li a,
+.header-style-three .header-lower .search-btn .theme-btn {
+  color: var(--gr-white) !important;
+}
+
+.header-style-three .main-menu .navigation > li.current > a,
+.header-style-three .main-menu .navigation > li:hover > a {
+  color: #dff7e8 !important;
+}
+
+.header-style-three .main-menu .navigation > li > ul {
+  background: var(--gr-white);
+  border-top: 3px solid var(--gr-green);
+}
+
+.header-style-three .main-menu .navigation > li > ul > li > a {
+  color: var(--gr-ink) !important;
+}
+
+.header-style-three .sticky-header {
+  background: var(--gr-white) !important;
+  box-shadow: 0 2px 16px rgba(15, 79, 43, 0.08);
+}
+
+.header-style-three .sticky-header .logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* —— Buttons —— */
+.theme-btn.btn-style-six .btn-title,
+.theme-btn.btn-style-seven .btn-title,
+.theme-btn.btn-style-eight .btn-title {
+  background: var(--gr-green) !important;
+}
+
+.theme-btn.btn-style-six:hover .btn-title,
+.theme-btn.btn-style-seven:hover .btn-title,
+.theme-btn.btn-style-eight:hover .btn-title {
+  background: var(--gr-green-dark) !important;
+}
+
+.theme-btn.btn-style-eight .btn-title {
+  background: var(--gr-green-deep) !important;
+}
+
+/* —— Page banners —— */
+.page-banner {
+  background: var(--gr-green-deep) !important;
+  min-height: 280px;
+}
+
+.page-banner .image-layer:before {
+  background: linear-gradient(90deg, rgba(15, 79, 43, 0.82), rgba(31, 138, 76, 0.55)) !important;
+}
+
+/* —— Sections —— */
+.sec-title.bio-theme .upper-text,
+.sec-title.bio-theme h2,
+.bio-theme .sec-title h2 {
+  color: var(--gr-green-deep) !important;
+}
+
+.sec-title .bottom-dots .dot,
+.sec-title .bottom-dots .line-dot {
+  background: var(--gr-green) !important;
+}
+
+.about-section-two {
+  background: var(--gr-paper);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-section-two .upper-quote-box {
+  display: none;
+}
+
+.call-to-action-two {
+  background: var(--gr-green) !important;
+}
+
+.call-to-action-two .bg-layer {
+  display: none;
+}
+
+.call-to-action-two h2,
+.call-to-action-three .subtitle,
+.call-to-action-three h2 {
+  color: var(--gr-white) !important;
+}
+
+.call-to-action-three {
+  background: var(--gr-green-deep) !important;
+  padding: 70px 0;
+}
+
+.projects-section-two {
+  background: var(--gr-white);
+  padding: 80px 0;
+}
+
+.projects-section-two .project-block-one .caption-box h3 a {
+  color: var(--gr-green-deep);
+}
+
+/* Minimal sector cards on home */
+.gr-sectors .sector-card {
+  background: var(--gr-paper);
+  border: 1px solid var(--gr-line);
+  padding: 36px 28px;
+  height: 100%;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.gr-sectors .sector-card:hover {
+  border-color: var(--gr-green);
+  transform: translateY(-3px);
+}
+
+.gr-sectors .sector-card h3 {
+  color: var(--gr-green-deep);
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.gr-sectors .sector-card p {
+  color: var(--gr-muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.gr-sectors .sector-label {
+  display: inline-block;
+  color: var(--gr-green);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Contact page — no icon clutter */
+.contact-section.contact-page .info-blocks .icon {
+  display: none !important;
+}
+
+.contact-section.contact-page .info-block .inner {
+  background: var(--gr-paper);
+  border: 1px solid var(--gr-line);
+  padding: 32px 24px;
+  text-align: left;
+  min-height: auto;
+}
+
+.contact-section.contact-page .info-block strong {
+  color: var(--gr-green-deep);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-section .content-box {
+  background: var(--gr-green-deep) !important;
+}
+
+.contact-section .content-box .image-layer .info-box .icon {
+  display: none !important;
+}
+
+/* Footer — brighter green base */
+.footer-style-three {
+  background: var(--gr-green-deep) !important;
+}
+
+.footer-style-three .about-text,
+.footer-style-three .info-text,
+.footer-style-three .info-block strong,
+.footer-style-three .widget-title h3,
+.footer-style-three .links-widget li a,
+.footer-style-three .copyright,
+.footer-style-three .footer-nav li a {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.footer-style-three .footer-logo-box img {
+  max-height: 56px;
+  width: auto;
+  background: var(--gr-white);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.footer-style-three .info-block .icon-box {
+  display: none !important;
+}
+
+.footer-style-three .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Preloader accent */
+.preloader .icon {
+  filter: hue-rotate(40deg) saturate(1.2);
+}
+
+/* Services cards */
+.services-section-four {
+  background: var(--gr-paper);
+}
+
+.service-block-five .title-box h3 a {
+  color: var(--gr-green-deep);
+}
+
+/* Soften dark overlays on banners */
+.banner-section.banner-three .slide-item .image-layer:before {
+  background: linear-gradient(90deg, rgba(15, 79, 43, 0.75) 0%, rgba(31, 138, 76, 0.35) 70%, rgba(31, 138, 76, 0.15) 100%) !important;
+}
+
+.banner-section.banner-three .content-box .text {
+  max-width: 540px;
+}
+
+/* Mobile menu */
+.mobile-menu .menu-box {
+  background: var(--gr-white);
+}
+
+.mobile-menu .nav-logo img {
+  max-height: 44px;
+  width: auto;
 }

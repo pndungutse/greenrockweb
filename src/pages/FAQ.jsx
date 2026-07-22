@@ -22,12 +22,12 @@ const faqItems = [
   {
     question: 'What types of facilities does Greenrock work on?',
     answer:
-      'Our focus includes data centers, warehouses and distribution facilities, industrial and manufacturing projects, healthcare facilities, laboratories and R&D spaces, and commercial and office buildings.',
+      'Our focus is data centers, warehouses and distribution facilities, and heavy industrial and manufacturing projects. We also support related commercial and specialty facilities when integrated engineering is required.',
   },
   {
     question: 'How is sustainability incorporated into the design?',
     answer:
-      'Sustainability is considered from the beginning—not added at the end. We evaluate site conditions, materials, structural efficiency, energy demand, HVAC and electrical systems, water use, resilience, and long-term operating cost as part of an integrated design process.',
+      'Performance and operating cost are considered from the beginning, not added at the end. We evaluate site conditions, materials, structure, energy demand, HVAC and electrical systems, water use, and long-term reliability as part of an integrated design process.',
   },
   {
     question: 'Can Greenrock help with codes, permitting, and construction coordination?',
@@ -42,7 +42,7 @@ const faqItems = [
   {
     question: 'How do I start a project with Greenrock?',
     answer:
-      'Contact us at info@greenrockeng.com or (949) 771-4943. We will discuss your goals, constraints, schedule, and required disciplines, then recommend a coordinated scope and next steps.',
+      'Contact us at info@greenrockeng.com or (949) 771-4943. We are based in Phoenix, Arizona. We will discuss your goals, constraints, schedule, and required disciplines, then recommend a coordinated scope and next steps.',
   },
 ];
 

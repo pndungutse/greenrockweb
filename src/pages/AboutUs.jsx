@@ -87,8 +87,8 @@ const AboutUs = () => {
                 <div className="text-column col-lg-7 col-md-12 col-sm-12">
                     <div className="inner wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
                         <div className="text-content">
-                            <p>Greenrock Engineering and Design Services was founded on a simple conviction: the best projects come from disciplines that design together. Our engineers, architects, and designers work as one team — resolving conflicts on paper instead of on site, and engineering out waste before it&rsquo;s built in.</p>
-                            <p>We treat sustainability as a starting condition, not a certificate — and bring a client&rsquo;s-eye view to every engagement: responsive, direct, and accountable for outcomes, not just drawings.</p>
+                            <p>Greenrock Engineering and Design Services was founded on a simple idea: the best industrial projects come from disciplines that design together. Our engineers, architects, and designers work as one team, resolving conflicts on paper instead of on site.</p>
+                            <p>Based in Phoenix, Arizona, we focus on data centers, warehouses, and heavy industrial facilities. We are responsive, direct, and accountable for outcomes, not just drawings.</p>
                         </div>
                         <div className="signature">The Greenrock Team</div>
                     </div>
@@ -119,20 +119,20 @@ const AboutUs = () => {
                             <div className="lower-box">
                                 <div className="count">02</div>
                                 <h3><Link to="/services">Mission-Critical Sectors</Link></h3>
-                                <div className="text">Architecture, civil, structural, electrical, mechanical, and design services under one roof</div>
+                                <div className="text">Data centers, warehouses, and industrial facilities where coordination across disciplines matters most</div>
                             </div>
                         </div>
                     </div>
                     {/*Default Block*/}
-                    <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms"  data-wow-duration="2000ms">
+                    <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
                                 <a href="#"><img src={asset('/assets/images/resource/featured-image-34.jpg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">03</div>
-                                <h3><Link to="/services">Sustainable By Design</Link></h3>
-                                <div className="text">Architecture, civil, structural, electrical, mechanical, and design services under one roof</div>
+                                <h3><Link to="/services">Phoenix Based</Link></h3>
+                                <div className="text">Serving industrial clients from Phoenix, Arizona with one accountable engineering and design team</div>
                             </div>
                         </div>
                     </div>
@@ -153,16 +153,16 @@ const AboutUs = () => {
                 <div className="inner clearfix">
                     <div className="content wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                         <div className="title">
-                            <div className="sub-title"><span className="icon flaticon-flash"></span> Projects For World</div>
+                            <div className="sub-title"><span className="icon flaticon-flash"></span> Our Focus</div>
                             <h2>Work That Matters</h2>
                         </div>
-                        <div className="text">Data centers, warehouses, healthcare, laboratories, and commercial facilities — complex projects where integrated engineering pays off.</div>
+                        <div className="text">Data centers, warehouses, and heavy industrial facilities where integrated engineering pays off.</div>
 
                         <div className="features">
                             <ul>
-                                <li><span className="gap-icon icon-Wrench"></span> One Accountable Team, Concept To Closeout</li>
-                                <li><span className="gap-icon icon-Starship2"></span> Designs That Lower Lifecycle Cost</li>
-                                <li><span className="gap-icon icon-WorldGlobe"></span> Tailored To Each Client’s Goals And Schedule</li>
+                                <li><span className="gap-icon icon-Wrench"></span> One accountable team, concept to closeout</li>
+                                <li><span className="gap-icon icon-Starship2"></span> Designs that lower lifecycle cost</li>
+                                <li><span className="gap-icon icon-WorldGlobe"></span> Tailored to each client goals and schedule</li>
                             </ul>
                         </div>
                         <div className="links-box"><Link to="/contacts" className="theme-btn btn-style-one"><div className="btn-title"><span className="btn-txt">View All Works</span><span className="btn-icon"><span className="icon flaticon-arrows-11"></span> </span></div></Link></div>
@@ -177,16 +177,16 @@ const AboutUs = () => {
                         <div className="inner-box">
                             <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-15.jpg')})` }}></div>
                             <div className="title">
-                                <span className="icon flaticon-solar-panel"></span>
+                                <span className="icon flaticon-settings-2"></span>
                                 <span className="txt">our Mission</span>
                             </div>
                             <div className="overlay">
                                 <div className="over-inner">
                                     <div className="icon-box">
-                                        <span className="icon flaticon-solar-panel"></span>
+                                        <span className="icon flaticon-settings-2"></span>
                                     </div>
                                     <h3><a href="#">our Mission</a></h3>
-                                    <div className="text">Our mission is to help clients stay ahead of a changing built environment with engineering that answers to people, performance, and the planet. We deliver responsive, accountable solutions that improve outcomes—not just drawings.</div>
+                                    <div className="text">Help clients deliver complex industrial facilities with coordinated engineering that improves outcomes, not just drawings.</div>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ const AboutUs = () => {
                                         <span className="icon flaticon-trees"></span>
                                     </div>
                                     <h3><a href="#">innovation</a></h3>
-                                    <div className="text">Innovation begins with disciplines designing together. Our engineers, architects, and designers resolve conflicts early, engineer out waste before it is built in, and make sustainability a starting condition—not an afterthought.</div>
+                                    <div className="text">Innovation begins with disciplines designing together. We resolve conflicts early and keep documentation coordinated for industrial construction.</div>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +254,7 @@ const AboutUs = () => {
                             <div className="date">2024</div>
                             <div className="round-dot"></div>
                             <div className="title">Sustainability First</div>
-                            <div className="text">Sustainability became the starting condition for every project—from materials and systems to sites, energy use, and lifecycle cost.</div>
+                            <div className="text">Performance became a starting condition for every project, from materials and systems to sites, energy use, and lifecycle cost.</div>
                         </div>
                     </div>
                     <div className="slide">
@@ -284,12 +284,12 @@ const AboutUs = () => {
     <section className="newsletter-section">
         <div className="auto-container">
             {/*Big Icon*/}
-            <div className="big-icon"><span className="flaticon-solar-panel"></span></div>
+            <div className="big-icon"><span className="flaticon-settings-2"></span></div>
 
             <div className="row clearfix">
                 <div className="title-column col-xl-4 col-lg-12 col-md-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                     <div className="inner">
-                        <h2>We’re Dedicated To <br />A Sustainable Built Environment</h2>
+                        <h2>We Are Dedicated To <br />Industrial Engineering Excellence</h2>
                     </div>
                 </div>
                 <div className="form-column col-xl-8 col-lg-12 col-md-12">

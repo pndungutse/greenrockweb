@@ -320,6 +320,21 @@ a:focus {
   display: none !important;
 }
 
+.footer-style-three .info .info-block {
+  padding-left: 0 !important;
+  min-height: 0 !important;
+  margin-bottom: 18px;
+}
+
+.footer-style-three .gallery-widget .widget-title {
+  margin-bottom: 22px;
+}
+
+.footer-style-three .gallery-widget .info {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-style-three .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(0, 0, 0, 0.12);

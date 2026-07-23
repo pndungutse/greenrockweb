@@ -101,7 +101,7 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <a href="#"><img src={asset('/assets/images/resource/Integrated.jpeg')} alt="" /></a>
+                                <a href="#"><img src={asset('/assets/images/resource/integrated.jpeg')} alt="" /></a>
                             </div>
                             <div className="lower-box">
                                 <div className="count">01</div>

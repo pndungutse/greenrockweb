@@ -336,8 +336,8 @@ a:focus {
 }
 
 .footer-style-three .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #2f333c !important;
 }
 
 /* Preloader accent */

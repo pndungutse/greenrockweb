@@ -182,7 +182,7 @@ const AboutUs = () => {
                     {/*Text Over Block*/}
                     <div className="text-over-block">
                         <div className="inner-box">
-                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-15.jpg')})` }}></div>
+                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/mission1.avif')})` }}></div>
                             <div className="title">
                                 <span className="icon flaticon-settings-2"></span>
                                 <span className="txt">our Mission</span>
@@ -201,7 +201,7 @@ const AboutUs = () => {
                     {/*Text Over Block*/}
                     <div className="text-over-block">
                         <div className="inner-box">
-                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-16.jpg')})` }}></div>
+                            <div className="block-image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/vision2.jpeg')})` }}></div>
                             <div className="title">
                                 <span className="icon flaticon-trees"></span>
                                 <span className="txt">innovation</span>

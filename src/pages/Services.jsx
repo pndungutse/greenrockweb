@@ -67,7 +67,7 @@ const Services = () => {
 
     {/* Page Banner Section */}
     <section className="page-banner">
-        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-2.jpg')})` }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/Expertise3.jpg')})` }}></div>
 
         <div className="auto-container">
             <div className="breadcrumb-box">

@@ -128,9 +128,9 @@ const AboutUs = () => {
                         <div className="inner-box">
                             <div className="image-box">
                                 <iframe
-                                    className="map-embed"
+                                    className="gr-map-embed gr-map-embed--card"
                                     title="Phoenix, Arizona"
-                                    src="https://www.google.com/maps?q=Phoenix,+Arizona&z=11&output=embed"
+                                    src="https://maps.google.com/maps?q=Phoenix,+Arizona&z=11&hl=en&output=embed"
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                     allowFullScreen

@@ -1,30 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { setupContactMap } from '../utils/strnixScripts';
 import { asset } from '../utils/publicUrl';
 
 const Contacts = () => {
-    useEffect(() => {
-        let cancelled = false;
-
-        setupContactMap().catch((err) => {
-            if (!cancelled) {
-                // eslint-disable-next-line no-console
-                console.error(err);
-            }
-        });
-
-        return () => {
-            cancelled = true;
-        };
-    }, []);
-
     return (
         <>
             <div className="page-wrapper">
 
                 <section className="page-banner">
-                    <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-1.jpg')})` }}></div>
+                    <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/InTouch.jpg')})` }}></div>
                     <div className="auto-container">
                         <div className="breadcrumb-box">
                             <div className="auto-container">
@@ -82,7 +66,7 @@ const Contacts = () => {
                                     </div>
                                 </div>
                                 <div className="default-form contact-form">
-                                    <form method="post" action="https://t.commonsupport.com/strnix/sendemail.php" id="contact-form">
+                                    <form method="post" action="#" id="contact-form">
                                         <div className="row clearfix">
                                             <div className="col-lg-6 col-md-6 col-sm-12 form-group">
                                                 <input type="text" name="username" placeholder="Your Name" required="" />
@@ -120,22 +104,18 @@ const Contacts = () => {
                     </div>
                 </section>
 
-                <section className="map-section">
+                {/* <section className="map-section">
                     <div className="map-outer">
-                        <div
-                            className="map-canvas"
-                            data-zoom="11"
-                            data-lat="33.4484"
-                            data-lng="-112.0740"
-                            data-type="roadmap"
-                            data-hue="#1f8a4c"
-                            data-title="Greenrock Engineering"
-                            data-icon-path={asset('/assets/images/icons/map-marker.png')}
-                            data-content="Phoenix, Arizona<br /><a href='mailto:info@greenrockeng.com'>info@greenrockeng.com</a>"
-                        >
-                        </div>
+                        <iframe
+                            className="gr-map-embed"
+                            title="Greenrock Engineering — Phoenix, Arizona"
+                            src="https://maps.google.com/maps?q=Phoenix,+Arizona&z=12&hl=en&output=embed"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allowFullScreen
+                        />
                     </div>
-                </section>
+                </section> */}
 
             </div>
         </>

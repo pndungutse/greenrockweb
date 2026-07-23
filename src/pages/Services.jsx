@@ -5,45 +5,27 @@ import { asset } from '../utils/publicUrl';
 const serviceCards = [
     {
         title: 'Architecture',
-        icon: 'flaticon-settings',
-        image: asset('/assets/images/resource/featured-image-18.jpg'),
         text: 'Industrial and mission-critical building design for data centers, warehouses, and process facilities.',
-        delay: '0ms',
     },
     {
         title: 'Civil Engineering',
-        icon: 'flaticon-honeycomb',
-        image: asset('/assets/images/resource/featured-image-19.jpg'),
         text: 'Site development, grading, drainage, and infrastructure for large industrial campuses.',
-        delay: '300ms',
     },
     {
         title: 'Structural Engineering',
-        icon: 'flaticon-settings-2',
-        image: asset('/assets/images/resource/featured-image-20.jpg'),
         text: 'Efficient structural systems for high-bay warehouses, heavy industrial plants, and critical facilities.',
-        delay: '600ms',
     },
     {
         title: 'Electrical Engineering',
-        icon: 'flaticon-water-drop',
-        image: asset('/assets/images/resource/featured-image-21.jpg'),
         text: 'Power distribution, lighting, and low-voltage systems engineered for reliability and operating cost.',
-        delay: '0ms',
     },
     {
         title: 'Mechanical Engineering',
-        icon: 'flaticon-save',
-        image: asset('/assets/images/resource/featured-image-22.jpg'),
         text: 'HVAC, plumbing, and process support systems sized for industrial and data center performance.',
-        delay: '300ms',
     },
     {
         title: 'Design Services',
-        icon: 'flaticon-chimney-1',
-        image: asset('/assets/images/resource/featured-image-23.jpg'),
         text: 'Concept development, planning, and documentation that turn project goals into clear, buildable plans.',
-        delay: '600ms',
     },
 ];
 
@@ -103,153 +85,104 @@ const Services = () => {
     </section>
     {/*End Page Banner Section */}
 
-	<section className="services-section-four default-theme">
-
+    <section className="gr-disciplines">
         <div className="auto-container">
-            <div className="upper-content">
-                <div className="sec-title centered">
-                    <h2>Six disciplines. One integrated practice.</h2>
-                    <div className="subtitle">Architecture and engineering for industrial facilities</div>
-                    <div className="bottom-dots clearfix">
-                        <span className="dot line-dot"></span>
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                    </div>
-                </div>
-                <div className="text">Greenrock unites architecture, civil, structural, electrical, and mechanical engineering with integrated design for data centers, warehouses, and heavy industrial projects.</div>
+            <div className="gr-disciplines__intro">
+                <span className="gr-disciplines__eyebrow">Our Expertise</span>
+                <h2>Six disciplines. One integrated practice.</h2>
+                <p>
+                    Greenrock unites architecture, civil, structural, electrical, and mechanical engineering with integrated design for data centers, warehouses, and heavy industrial projects.
+                </p>
             </div>
 
-            <div className="row clearfix">
-                {serviceCards.map((service) => (
-                    <div
-                        className="service-block-five col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-                        data-wow-delay={service.delay}
-                        data-wow-duration="2000ms"
-                        key={service.title}
-                    >
-                        <div className="inner-box">
-                            <div className="image-box">
-                                <figure className="image"><img src={service.image} alt={service.title} /></figure>
-                                <div className="hover-box">
-                                    <div className="hover-inner">
-                                        <div className="content">
-                                            <div className="text">{service.text}</div>
-                                            <div className="link-box">
-                                                <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="title-box">
-                                <div className="title-inner">
-                                    <div className="icon"><span className={service.icon}></span></div>
-                                    <h3><Link to="/contacts">{service.title}</Link></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="gr-disciplines__grid">
+                {serviceCards.map((service, index) => (
+                    <article className="gr-disciplines__card" key={service.title}>
+                        <span className="gr-disciplines__num">{String(index + 1).padStart(2, '0')}</span>
+                        <h3>{service.title}</h3>
+                        <p>{service.text}</p>
+                        <Link to="/contacts" className="gr-disciplines__link">Learn more</Link>
+                    </article>
                 ))}
             </div>
 
-            <div className="bottom-text wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms">
-                <div className="text">Based in Phoenix, Arizona. Call or email us at <span className="phone"><a href="tel:+19497714943">(949) 771-4943</a></span></div>
+            <div className="gr-disciplines__footer">
+                Based in Phoenix, Arizona. Call or email us at{' '}
+                <a href="tel:+19497714943">(949) 771-4943</a>
             </div>
-
         </div>
     </section>
 
-    {/*Services Section*/}
-    <section className="services-section-one">
+    {/* Practice areas — clean alternating layout */}
+    <section className="gr-practice">
         <div className="auto-container">
-
-            <div className="services">
-                {/*Service-Block*/}
-                <div className="service-block">
-                    <div className="row clearfix">
-                        {/*Image Column*/}
-                        <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner">
-                                <div className="image"><img src={asset('/assets/images/resource/featured-image-3.jpg')} alt="" /></div>
-                                <div className="icon-box"><span className="flaticon-power-7"></span></div>
-                            </div>
-                        </div>
-                        {/*Text Column*/}
-                        <div className="text-column col-lg-7 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner clearfix">
-                                <div className="content">
-                                    <div className="title">
-                                        <h2><span>Architecture and Design Services</span></h2>
-                                        <div className="sub-text">Industrial and mission-critical building design</div>
-                                    </div>
-                                    <div className="text">Concept development, planning, and documentation for data centers, warehouses, and industrial facilities that need clear, buildable drawings.</div>
-                                    <div className="link-box">
-                                        <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Service-Block*/}
-                <div className="service-block">
-                    <div className="row clearfix">
-                        {/*Image Column*/}
-                        <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner">
-                                <div className="image"><img src={asset('/assets/images/resource/featured-image-4.jpg')} alt="" /></div>
-                                <div className="icon-box"><span className="flaticon-power-2"></span></div>
-                            </div>
-                        </div>
-                        {/*Text Column*/}
-                        <div className="text-column col-lg-7 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner clearfix">
-                                <div className="content">
-                                    <div className="title">
-                                        <h2><span>Civil and Structural Engineering</span></h2>
-                                        <div className="sub-text">Sites and structures for industrial campuses</div>
-                                    </div>
-                                    <div className="text">Site development, grading, drainage, and structural systems sized for high-bay warehouses, heavy industrial plants, and mission-critical facilities.</div>
-                                    <div className="link-box">
-                                        <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Service-Block*/}
-                <div className="service-block">
-                    <div className="row clearfix">
-                        {/*Image Column*/}
-                        <div className="image-column col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner">
-                                <div className="image"><img src={asset('/assets/images/resource/featured-image-5.jpg')} alt="" /></div>
-                                <div className="icon-box"><span className="flaticon-energy-1"></span></div>
-                            </div>
-                        </div>
-                        {/*Text Column*/}
-                        <div className="text-column col-lg-7 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
-                            <div className="inner clearfix">
-                                <div className="content">
-                                    <div className="title">
-                                        <h2><span>Electrical and Mechanical Engineering</span></h2>
-                                        <div className="sub-text">Power, cooling, and building systems</div>
-                                    </div>
-                                    <div className="text">Power distribution, lighting, HVAC, and plumbing engineered for reliability, density, and operating cost on industrial and data center projects.</div>
-                                    <div className="link-box">
-                                        <Link to="/contacts"><span className="txt">Get Started</span> <span className="icon flaticon-arrows-11"></span></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div className="gr-practice__intro">
+                <span className="gr-practice__eyebrow">How we deliver</span>
+                <h2>Integrated practice areas</h2>
+                <p>
+                    From concept through documentation, our disciplines work as one team on data centers, warehouses, and heavy industrial facilities.
+                </p>
             </div>
+
+            <article className="gr-practice__row">
+                <div className="gr-practice__media">
+                    <img src={asset('/assets/images/resource/ArchitectureServices.jpg')} alt="Architecture and design for industrial facilities" />
+                </div>
+                <div className="gr-practice__body">
+                    <span className="gr-practice__index">01</span>
+                    <h3>Architecture and Design</h3>
+                    <p className="gr-practice__lead">Industrial and mission-critical building design</p>
+                    <p>
+                        Concept development, planning, and clear documentation for data centers, warehouses, and industrial facilities. We focus on buildable drawings that support schedule, cost, and operations from day one.
+                    </p>
+                    <ul className="gr-practice__list">
+                        <li>Facility planning and space programming</li>
+                        <li>Design documentation for permitting and construction</li>
+                        <li>Coordination with engineering disciplines</li>
+                    </ul>
+                    <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
+                </div>
+            </article>
+
+            <article className="gr-practice__row gr-practice__row--reverse">
+                <div className="gr-practice__media">
+                    <img src={asset('/assets/images/resource/CivilEngineering.jpeg')} alt="Civil and structural engineering for industrial campuses" />
+                </div>
+                <div className="gr-practice__body">
+                    <span className="gr-practice__index">02</span>
+                    <h3>Civil and Structural Engineering</h3>
+                    <p className="gr-practice__lead">Sites and structures for industrial campuses</p>
+                    <p>
+                        Site development, grading, drainage, and structural systems sized for high-bay warehouses, heavy industrial plants, and mission-critical facilities where reliability and constructability matter.
+                    </p>
+                    <ul className="gr-practice__list">
+                        <li>Site grading, utilities, and stormwater</li>
+                        <li>Foundations and structural framing</li>
+                        <li>Heavy industrial and high-bay structures</li>
+                    </ul>
+                    <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
+                </div>
+            </article>
+
+            <article className="gr-practice__row">
+                <div className="gr-practice__media">
+                    <img src={asset('/assets/images/resource/Mechanical Engineering.jpeg')} alt="Electrical and mechanical systems for industrial facilities" />
+                </div>
+                <div className="gr-practice__body">
+                    <span className="gr-practice__index">03</span>
+                    <h3>Electrical and Mechanical Engineering</h3>
+                    <p className="gr-practice__lead">Power, cooling, and building systems</p>
+                    <p>
+                        Power distribution, lighting, HVAC, and plumbing engineered for reliability, density, and operating cost on industrial and data center projects. Systems are coordinated early to reduce field conflicts.
+                    </p>
+                    <ul className="gr-practice__list">
+                        <li>Power distribution and lighting design</li>
+                        <li>HVAC and process cooling support</li>
+                        <li>Plumbing and building systems coordination</li>
+                    </ul>
+                    <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
+                </div>
+            </article>
         </div>
     </section>
 

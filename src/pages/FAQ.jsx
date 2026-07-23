@@ -90,7 +90,7 @@ const FAQ = () => {
       <section className="page-banner">
         <div
           className="image-layer"
-          style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-8.jpg')})` }}
+          style={{ backgroundImage: `url(${asset('/assets/images/resource/FAQ.webp')})` }}
         ></div>
         <div className="auto-container">
           <div className="breadcrumb-box">

@@ -350,6 +350,395 @@ a:focus {
   min-height: 0;
 }
 
+.about-section-four .default-block .image-box .map-embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-section .map-embed {
+  display: block;
+  width: 100%;
+  height: 650px;
+  border: 0;
+}
+
+/* About "Work That Matters" panel — match nav green */
+.projects-section-three .text-column .bg-layer {
+  background: var(--gr-green) !important;
+}
+
+.newsletter-section {
+  background: var(--gr-green) !important;
+}
+
+.faq-section .title-box .send-email a {
+  color: var(--gr-green) !important;
+}
+
+.faq-section .title-box .send-email a:hover {
+  color: var(--gr-green-dark) !important;
+}
+
+/* Team section: center two cards + equal photo frames */
+.team-section .team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-section .team-block {
+  float: none;
+}
+
+.team-section .team-block .image-box,
+.team-section .team-block .image {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--gr-paper);
+}
+
+.team-section .team-block .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-section.default-theme .social-links {
+  background: var(--gr-green) !important;
+}
+
+.team-section .team-block .lower-box h3 a:hover {
+  color: var(--gr-green) !important;
+}
+
+/* —— Services practice areas (WSP / ABES inspired) —— */
+.gr-practice {
+  padding: 90px 0 70px;
+  background: var(--gr-white);
+}
+
+.gr-practice__intro {
+  max-width: 640px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.gr-practice__eyebrow {
+  display: inline-block;
+  color: var(--gr-green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.gr-practice__intro h2 {
+  color: var(--gr-green-deep);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.gr-practice__intro p {
+  color: var(--gr-muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.gr-practice__row {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 56px;
+  padding: 28px;
+  background: var(--gr-paper);
+  border: 1px solid var(--gr-line);
+}
+
+.gr-practice__row--reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.gr-practice__row--reverse .gr-practice__media {
+  order: 2;
+}
+
+.gr-practice__row--reverse .gr-practice__body {
+  order: 1;
+}
+
+.gr-practice__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #dfe9e3;
+}
+
+.gr-practice__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gr-practice__row:hover .gr-practice__media img {
+  transform: scale(1.03);
+}
+
+.gr-practice__body {
+  padding: 8px 12px;
+}
+
+.gr-practice__index {
+  display: block;
+  color: var(--gr-green);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+
+.gr-practice__body h3 {
+  color: var(--gr-green-deep);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+.gr-practice__lead {
+  color: var(--gr-muted);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px;
+}
+
+.gr-practice__body > p {
+  color: var(--gr-ink);
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+
+.gr-practice__list {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+.gr-practice__list li {
+  position: relative;
+  padding: 8px 0 8px 22px;
+  color: var(--gr-ink);
+  font-size: 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--gr-line);
+}
+
+.gr-practice__list li:last-child {
+  border-bottom: none;
+}
+
+.gr-practice__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background: var(--gr-green);
+}
+
+.gr-practice__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gr-white) !important;
+  background: var(--gr-green);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding: 14px 22px;
+  transition: background 0.25s ease;
+}
+
+.gr-practice__link:hover {
+  background: var(--gr-green-dark);
+  color: var(--gr-white) !important;
+}
+
+.gr-practice__link::after {
+  content: '→';
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* —— Disciplines grid (minimal, no images) —— */
+.gr-disciplines {
+  padding: 90px 0 70px;
+  background: var(--gr-paper);
+}
+
+.gr-disciplines__intro {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.gr-disciplines__eyebrow {
+  display: inline-block;
+  color: var(--gr-green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.gr-disciplines__intro h2 {
+  color: var(--gr-green-deep);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+
+.gr-disciplines__intro p {
+  color: var(--gr-muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.gr-disciplines__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gr-disciplines__card {
+  background: var(--gr-white);
+  border: 1px solid var(--gr-line);
+  padding: 32px 28px 28px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.gr-disciplines__card:hover {
+  border-color: var(--gr-green);
+  transform: translateY(-3px);
+}
+
+.gr-disciplines__num {
+  display: block;
+  color: var(--gr-green);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.gr-disciplines__card h3 {
+  color: var(--gr-green-deep);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.gr-disciplines__card p {
+  color: var(--gr-muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 24px;
+  flex: 1;
+}
+
+.gr-disciplines__link {
+  color: var(--gr-green-dark) !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.gr-disciplines__link:hover {
+  color: var(--gr-green) !important;
+  border-bottom-color: var(--gr-green);
+}
+
+.gr-disciplines__footer {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--gr-muted);
+  font-size: 15px;
+}
+
+.gr-disciplines__footer a {
+  color: var(--gr-green) !important;
+  font-weight: 700;
+}
+
+.gr-disciplines__footer a:hover {
+  color: var(--gr-green-dark) !important;
+}
+
+@media (max-width: 991px) {
+  .gr-disciplines__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gr-disciplines__intro h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gr-disciplines__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  .gr-practice__row,
+  .gr-practice__row--reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 20px;
+  }
+
+  .gr-practice__row--reverse .gr-practice__media,
+  .gr-practice__row--reverse .gr-practice__body {
+    order: initial;
+  }
+
+  .gr-practice__intro h2 {
+    font-size: 30px;
+  }
+
+  .gr-practice__body h3 {
+    font-size: 24px;
+  }
+}
+
 .banner-section.banner-three .content-box .text {
   max-width: 540px;
 }

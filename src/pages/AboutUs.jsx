@@ -1,25 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Facts from '../components/Facts';
 import { asset } from '../utils/publicUrl';
-import { setupContactMap } from '../utils/strnixScripts';
 
 const AboutUs = () => {
-    useEffect(() => {
-        let cancelled = false;
-
-        setupContactMap().catch((err) => {
-            if (!cancelled) {
-                // eslint-disable-next-line no-console
-                console.error(err);
-            }
-        });
-
-        return () => {
-            cancelled = true;
-        };
-    }, []);
-
     return (
         <div>
             <div className="page-wrapper">
@@ -57,7 +41,7 @@ const AboutUs = () => {
 
     {/* Page Banner Section */}
     <section className="page-banner">
-        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/banner-bg-1.jpg')})` }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/About.jpg')})` }}></div>
 
         <div className="auto-container">
             <div className="breadcrumb-box">
@@ -143,18 +127,14 @@ const AboutUs = () => {
                     <div className="default-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="2000ms">
                         <div className="inner-box">
                             <div className="image-box">
-                                <div
-                                    className="map-canvas"
-                                    data-zoom="11"
-                                    data-lat="33.4484"
-                                    data-lng="-112.0740"
-                                    data-type="roadmap"
-                                    data-hue="#1f8a4c"
-                                    data-title="Greenrock Engineering"
-                                    data-icon-path={asset('/assets/images/icons/map-marker.png')}
-                                    data-content="Phoenix, Arizona<br /><a href='mailto:info@greenrockeng.com'>info@greenrockeng.com</a>"
-                                >
-                                </div>
+                                <iframe
+                                    className="map-embed"
+                                    title="Phoenix, Arizona"
+                                    src="https://www.google.com/maps?q=Phoenix,+Arizona&z=11&output=embed"
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    allowFullScreen
+                                />
                             </div>
                             <div className="lower-box">
                                 <div className="count">03</div>
@@ -366,13 +346,13 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="row clearfix">
+            <div className="row clearfix justify-content-center team-row">
                 
                 {/*Team Block*/}
-                <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="1500ms">
+                <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-1.jpg')} alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/Alain.jpeg')} alt="Alain Ndeba" /></a></div>
 
                             <div className="social-links">
                                 <ul>
@@ -391,52 +371,10 @@ const AboutUs = () => {
                 </div>
 
                 {/*Team Block*/}
-                <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms"  data-wow-duration="1500ms">
+                <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-2.jpg')} alt="" /></a></div>
-                            <div className="social-links">
-                                <ul>
-                                    <li><a href="#"><span className="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-instagram"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-linkedin-in"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-facebook-f"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="lower-box">
-                            <h3><a href="#">Alain Ndeba</a></h3>
-                            <div className="info">Marketing Manager</div>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Team Block*/}
-                <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms"  data-wow-duration="1500ms">
-                    <div className="inner-box">
-                        <div className="image-box">
-                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-3.jpg')} alt="" /></a></div>
-                            <div className="social-links">
-                                <ul>
-                                    <li><a href="#"><span className="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-instagram"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-linkedin-in"></span></a></li>
-                                    <li><a href="#"><span className="fab fa-facebook-f"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="lower-box">
-                            <h3><a href="#">Alain Ndeba</a></h3>
-                            <div className="info">Senior Engineer</div>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Team Block*/}
-                <div className="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms"  data-wow-duration="1500ms">
-                    <div className="inner-box">
-                        <div className="image-box">
-                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/team-image-4.jpg')} alt="" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/User2.jpeg')} alt="Alain Ndeba" /></a></div>
                             <div className="social-links">
                                 <ul>
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>

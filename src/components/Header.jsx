@@ -47,7 +47,6 @@ const Header = () => {
                                                     </ul>
                                                 </li>
                                                 <li className={isCurrent('/services') ? 'current' : ''}><Link to="/services">Services</Link></li>
-                                                <li className={isCurrent('/projects') ? 'current' : ''}><Link to="/projects">Projects</Link></li>
                                                 <li className={isCurrent('/contacts') ? 'current' : ''}><Link to="/contacts">Contact</Link></li>
                                             </ul>
                                         </div>

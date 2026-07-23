@@ -41,7 +41,7 @@ const AboutUs = () => {
 
     {/* Page Banner Section */}
     <section className="page-banner">
-        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/About.jpg')})` }}></div>
+        <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/About1.webp')})` }}></div>
 
         <div className="auto-container">
             <div className="breadcrumb-box">

@@ -13,7 +13,7 @@ const Home = () => {
             data-options='{"loop": false, "margin": 0, "autoheight":true, "lazyload":true, "nav": false, "dots": false, "autoplay": false, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'
           >
             <div className="slide-item">
-              <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/DataCenter1.jpg')})` }}></div>
+              <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/Datacenter1.jpg')})` }}></div>
               <div className="curve-layer"></div>
               <div className="auto-container">
                 <div className="content-box">

@@ -202,6 +202,23 @@ a:focus {
   display: none;
 }
 
+/* Mission / Innovation: show overlay copy always (no hover / JS wait) */
+.projects-section-three .text-over-block .inner-box .overlay {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  background: rgba(15, 79, 43, 0.82) !important;
+}
+
+.projects-section-three .text-over-block .title {
+  display: none;
+}
+
+.projects-section-three .text-over-block .inner-box .overlay .text {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.55;
+}
+
 .call-to-action-two {
   background: var(--gr-green) !important;
 }

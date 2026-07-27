@@ -11,27 +11,19 @@ const Header = () => {
             <header className="main-header header-style-three">
 
                 <div className="header-main-box">
-                    <div className="header-upper">
-                        <div className="auto-container">
-                            <div className="inner clearfix">
-                                <div className="logo-box">
-                                    <div className="logo">
-                                        <Link to="/" title="Greenrock Engineering and Design Services">
-                                            <img
-                                                src={asset('/assets/images/greenrock-logo.png')}
-                                                alt="Greenrock Engineering and Design Services"
-                                                title="Greenrock Engineering and Design Services"
-                                            />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="header-lower">
                         <div className="auto-container">
-                            <div className="nav-box clearfix">
+                            <div className="nav-box gr-nav clearfix">
+                                <div className="gr-nav__brand">
+                                    <Link to="/" title="Greenrock Engineering and Design Services" className="gr-nav__logo">
+                                        <img
+                                            src={asset('/assets/images/Logo_GreenRock.jpeg')}
+                                            alt="Greenrock Engineering and Design Services"
+                                            title="Greenrock Engineering and Design Services"
+                                        />
+                                    </Link>
+                                </div>
+
                                 <div className="nav-outer clearfix">
                                     <div className="mobile-nav-toggler"><span className="icon flaticon-menu-1"></span></div>
 
@@ -69,7 +61,7 @@ const Header = () => {
                     <div className="auto-container clearfix">
                         <div className="logo pull-left">
                             <Link to="/" title="Greenrock">
-                                <img src={asset('/assets/images/greenrock-logo-sm.png')} alt="Greenrock" title="Greenrock" />
+                                <img src={asset('/assets/images/Logo_GreenRock.jpeg')} alt="Greenrock" title="Greenrock" />
                             </Link>
                         </div>
                         <div className="pull-right">
@@ -84,7 +76,7 @@ const Header = () => {
                     <nav className="menu-box">
                         <div className="nav-logo">
                             <Link to="/">
-                                <img src={asset('/assets/images/greenrock-logo.png')} alt="Greenrock" title="Greenrock" />
+                                <img src={asset('/assets/images/Logo_GreenRock.jpeg')} alt="Greenrock" title="Greenrock" />
                             </Link>
                         </div>
                         <div className="menu-outer"></div>

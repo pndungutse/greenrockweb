@@ -16,7 +16,7 @@ const Footer = () => {
                                     <div className="footer-logo-box">
                                         <Link to="/" title="Greenrock Engineering and Design Services">
                                             <img
-                                                src={asset('/assets/images/greenrock-logo.png')}
+                                                src={asset('/assets/images/Logo_GreenRock.jpeg')}
                                                 alt="Greenrock Engineering and Design Services"
                                                 title="Greenrock Engineering and Design Services"
                                             />

@@ -347,9 +347,29 @@ const AboutUs = () => {
             </div>
 
             <div className="row clearfix justify-content-center team-row">
-                
+
                 {/*Team Block*/}
                 <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="1500ms">
+                    <div className="inner-box">
+                        <div className="image-box">
+                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/User2.jpeg')} alt="Hadi Islam" /></a></div>
+                            <div className="social-links">
+                                <ul>
+                                    <li><a href="#"><span className="fab fa-twitter"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-linkedin-in"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-facebook-f"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="lower-box">
+                            <h3><a href="#">Hadi Islam</a></h3>
+                            <div className="info">President and Director of Engineering</div>
+                        </div>
+                    </div>
+                </div>
+                {/*Team Block*/}
+                <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
                             <div className="image"><a href="#"><img src={asset('/assets/images/resource/Alain.jpeg')} alt="Alain Ndeba" /></a></div>
@@ -365,16 +385,15 @@ const AboutUs = () => {
                         </div>
                         <div className="lower-box">
                             <h3><a href="#">Alain Ndeba</a></h3>
-                            <div className="info">CEO  |  Founder</div>
+                            <div className="info">Engineering and Project Development Manager</div>
                         </div>
                     </div>
                 </div>
-
                 {/*Team Block*/}
-                <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms"  data-wow-duration="1500ms">
+                <div className="team-block col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms"  data-wow-duration="1500ms">
                     <div className="inner-box">
                         <div className="image-box">
-                            <div className="image"><a href="#"><img src={asset('/assets/images/resource/User2.jpeg')} alt="Alain Ndeba" /></a></div>
+                            <div className="image"><a href="#"><img src={asset('/assets/images/clients/UnknownUser.jpg')} alt="Team member" /></a></div>
                             <div className="social-links">
                                 <ul>
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>
@@ -385,8 +404,8 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="lower-box">
-                            <h3><a href="#">Alain Ndeba</a></h3>
-                            <div className="info">Marketing Manager</div>
+                            <h3><a href="#">Marcus Hale</a></h3>
+                            <div className="info">Senior Structural Design Lead</div>
                         </div>
                     </div>
                 </div>

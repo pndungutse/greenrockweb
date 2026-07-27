@@ -61,12 +61,12 @@ const Footer = () => {
                                             </div>
                                             <div className="widget-content">
                                                 <ul>
-                                                    <li><Link to="/services">Architecture</Link></li>
-                                                    <li><Link to="/services">Civil Engineering</Link></li>
+                                                    <li><Link to="/services">Architectural Design</Link></li>
                                                     <li><Link to="/services">Structural Engineering</Link></li>
-                                                    <li><Link to="/services">Electrical Engineering</Link></li>
-                                                    <li><Link to="/services">Mechanical Engineering</Link></li>
-                                                    <li><Link to="/services">Design Services</Link></li>
+                                                    <li><Link to="/services">Mechanical &amp; Electrical</Link></li>
+                                                    <li><Link to="/services">Systems &amp; Controls</Link></li>
+                                                    <li><Link to="/services">CAD Design</Link></li>
+                                                    <li><Link to="/services">Project Delivery</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

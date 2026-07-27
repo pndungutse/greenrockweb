@@ -106,7 +106,7 @@ const AboutUs = () => {
                             <div className="lower-box">
                                 <div className="count">01</div>
                                 <h3><Link to="/services">Integrated Disciplines</Link></h3>
-                                <div className="text">Architecture, civil, structural, electrical, mechanical, and design services under one roof</div>
+                                <div className="text">Architectural, structural, mechanical, and electrical design with systems, CAD, and project delivery under one roof</div>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ const AboutUs = () => {
                             <div className="date">2023</div>
                             <div className="round-dot"></div>
                             <div className="title">Integrated Practice</div>
-                            <div className="text">Architecture, civil, structural, electrical, mechanical engineering, and design services came together as one accountable team.</div>
+                            <div className="text">Design engineering, systems and controls, CAD, management, estimating, procurement, and risk assessment came together as one accountable team.</div>
                         </div>
                     </div>
                     <div className="slide">

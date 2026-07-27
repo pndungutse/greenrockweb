@@ -2,30 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { asset } from '../utils/publicUrl';
 
+/** Core offerings — related services combined where it reads cleaner. */
 const serviceCards = [
     {
-        title: 'Architecture',
-        text: 'Industrial and mission-critical building design for data centers, warehouses, and process facilities.',
+        title: 'Architectural Design',
+        text: 'Facility planning and building design for data centers, warehouses, and industrial projects.',
     },
     {
-        title: 'Civil Engineering',
-        text: 'Site development, grading, drainage, and infrastructure for large industrial campuses.',
+        title: 'Structural Design Engineering',
+        text: 'Foundations and framing sized for high-bay, heavy industrial, and mission-critical structures.',
     },
     {
-        title: 'Structural Engineering',
-        text: 'Efficient structural systems for high-bay warehouses, heavy industrial plants, and critical facilities.',
+        title: 'Mechanical Design Engineering',
+        text: 'HVAC, plumbing, and process support systems engineered for performance and operating cost.',
     },
     {
-        title: 'Electrical Engineering',
-        text: 'Power distribution, lighting, and low-voltage systems engineered for reliability and operating cost.',
+        title: 'Electrical Design Engineering',
+        text: 'Power distribution, lighting, and electrical systems designed for reliability and density.',
     },
     {
-        title: 'Mechanical Engineering',
-        text: 'HVAC, plumbing, and process support systems sized for industrial and data center performance.',
+        title: 'Systems Design & Controls',
+        text: 'Systems design engineering with instrumentation and control for coordinated facility performance.',
     },
     {
-        title: 'Design Services',
-        text: 'Concept development, planning, and documentation that turn project goals into clear, buildable plans.',
+        title: 'CAD Design',
+        text: 'Clear, coordinated drawings and models that keep design intent ready for construction.',
+    },
+    {
+        title: 'Project Management & Procurement',
+        text: 'One accountable lead for scope, schedule, and vendor coordination through delivery.',
+    },
+    {
+        title: 'Feasibility & Risk Assessment',
+        text: 'Capital estimating, early feasibility studies, and risk reviews that inform sound project decisions.',
     },
 ];
 
@@ -34,7 +43,6 @@ const Services = () => {
         <div>
             <div className="page-wrapper">
 
-{/*Search Popup*/}
     <div id="search-popup" className="search-popup">
         <div className="close-search theme-btn"><span className="flaticon-cancel"></span></div>
         <div className="popup-inner">
@@ -48,24 +56,10 @@ const Services = () => {
                         </fieldset>
                     </div>
                 </form>
-                
-                <br />
-                <h3>Recent Search Keywords</h3>
-                <ul className="recent-searches">
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Idea</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Growth</a></li>
-                    <li><a href="#">Plan</a></li>
-                </ul>
-            
             </div>
-            
         </div>
     </div>
 
-
-    {/* Page Banner Section */}
     <section className="page-banner">
         <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/resource/Expertise3.jpg')})` }}></div>
 
@@ -81,21 +75,19 @@ const Services = () => {
 
             <h1>Our Expertise</h1>
         </div>
-
     </section>
-    {/*End Page Banner Section */}
 
     <section className="gr-disciplines">
         <div className="auto-container">
             <div className="gr-disciplines__intro">
                 <span className="gr-disciplines__eyebrow">Our Expertise</span>
-                <h2>Six disciplines. One integrated practice.</h2>
+                <h2>Design, systems, and project delivery under one practice.</h2>
                 <p>
-                    Greenrock unites architecture, civil, structural, electrical, and mechanical engineering with integrated design for data centers, warehouses, and heavy industrial projects.
+                    Greenrock provides architectural, structural, mechanical, and electrical design engineering, plus systems and controls, CAD, management, estimating, procurement, and risk assessment for industrial facilities.
                 </p>
             </div>
 
-            <div className="gr-disciplines__grid">
+            <div className="gr-disciplines__grid gr-disciplines__grid--eight">
                 {serviceCards.map((service, index) => (
                     <article className="gr-disciplines__card" key={service.title}>
                         <span className="gr-disciplines__num">{String(index + 1).padStart(2, '0')}</span>
@@ -113,32 +105,31 @@ const Services = () => {
         </div>
     </section>
 
-    {/* Practice areas — clean alternating layout */}
     <section className="gr-practice">
         <div className="auto-container">
             <div className="gr-practice__intro">
                 <span className="gr-practice__eyebrow">How we deliver</span>
                 <h2>Integrated practice areas</h2>
                 <p>
-                    From concept through documentation, our disciplines work as one team on data centers, warehouses, and heavy industrial facilities.
+                    From early feasibility through coordinated design and delivery support, our team keeps industrial projects clear, buildable, and accountable.
                 </p>
             </div>
 
             <article className="gr-practice__row">
                 <div className="gr-practice__media">
-                    <img src={asset('/assets/images/resource/ArchitectureServices.jpg')} alt="Architecture and design for industrial facilities" />
+                    <img src={asset('/assets/images/resource/ArchitectureServices.jpg')} alt="Architectural and structural design for industrial facilities" />
                 </div>
                 <div className="gr-practice__body">
                     <span className="gr-practice__index">01</span>
-                    <h3>Architecture and Design</h3>
-                    <p className="gr-practice__lead">Industrial and mission-critical building design</p>
+                    <h3>Design Engineering</h3>
+                    <p className="gr-practice__lead">Architecture, structure, mechanical, electrical, and CAD</p>
                     <p>
-                        Concept development, planning, and clear documentation for data centers, warehouses, and industrial facilities. We focus on buildable drawings that support schedule, cost, and operations from day one.
+                        We design facilities as one coordinated package. Architectural layouts, structural systems, mechanical and electrical engineering, and CAD documentation stay aligned so drawings are clear for permitting and construction.
                     </p>
                     <ul className="gr-practice__list">
-                        <li>Facility planning and space programming</li>
-                        <li>Design documentation for permitting and construction</li>
-                        <li>Coordination with engineering disciplines</li>
+                        <li>Architectural design and facility planning</li>
+                        <li>Structural, mechanical, and electrical design engineering</li>
+                        <li>CAD design and coordinated documentation</li>
                     </ul>
                     <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
                 </div>
@@ -146,19 +137,19 @@ const Services = () => {
 
             <article className="gr-practice__row gr-practice__row--reverse">
                 <div className="gr-practice__media">
-                    <img src={asset('/assets/images/resource/CivilEngineering.jpeg')} alt="Civil and structural engineering for industrial campuses" />
+                    <img src={asset('/assets/images/resource/Mechanical Engineering.jpeg')} alt="Systems design and instrumentation for industrial facilities" />
                 </div>
                 <div className="gr-practice__body">
                     <span className="gr-practice__index">02</span>
-                    <h3>Civil and Structural Engineering</h3>
-                    <p className="gr-practice__lead">Sites and structures for industrial campuses</p>
+                    <h3>Systems Design & Controls</h3>
+                    <p className="gr-practice__lead">Systems engineering with instrumentation and control</p>
                     <p>
-                        Site development, grading, drainage, and structural systems sized for high-bay warehouses, heavy industrial plants, and mission-critical facilities where reliability and constructability matter.
+                        Complex industrial facilities need more than standalone building systems. We design integrated systems and instrumentation and control strategies that support reliable operations across power, process, and building functions.
                     </p>
                     <ul className="gr-practice__list">
-                        <li>Site grading, utilities, and stormwater</li>
-                        <li>Foundations and structural framing</li>
-                        <li>Heavy industrial and high-bay structures</li>
+                        <li>Systems design engineering</li>
+                        <li>Instrumentation and control</li>
+                        <li>Cross-discipline coordination for plant and facility performance</li>
                     </ul>
                     <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
                 </div>
@@ -166,19 +157,19 @@ const Services = () => {
 
             <article className="gr-practice__row">
                 <div className="gr-practice__media">
-                    <img src={asset('/assets/images/resource/Mechanical Engineering.jpeg')} alt="Electrical and mechanical systems for industrial facilities" />
+                    <img src={asset('/assets/images/resource/CivilEngineering.jpeg')} alt="Project management, estimating, procurement, and risk assessment" />
                 </div>
                 <div className="gr-practice__body">
                     <span className="gr-practice__index">03</span>
-                    <h3>Electrical and Mechanical Engineering</h3>
-                    <p className="gr-practice__lead">Power, cooling, and building systems</p>
+                    <h3>Project Delivery</h3>
+                    <p className="gr-practice__lead">Management, estimating, procurement, and risk</p>
                     <p>
-                        Power distribution, lighting, HVAC, and plumbing engineered for reliability, density, and operating cost on industrial and data center projects. Systems are coordinated early to reduce field conflicts.
+                        Beyond drawings, Greenrock supports decisions that shape cost and schedule. We help manage delivery, prepare feasibility and capital estimates, coordinate procurement, and assess risk so projects move forward with clearer expectations.
                     </p>
                     <ul className="gr-practice__list">
-                        <li>Power distribution and lighting design</li>
-                        <li>HVAC and process cooling support</li>
-                        <li>Plumbing and building systems coordination</li>
+                        <li>Project management</li>
+                        <li>Feasibility and capital estimating</li>
+                        <li>Procurement support and risk assessment</li>
                     </ul>
                     <Link to="/contacts" className="gr-practice__link">Discuss a project</Link>
                 </div>
@@ -186,9 +177,7 @@ const Services = () => {
         </div>
     </section>
 
-    {/*Enquiry Section*/}
     <section className="enquiry-section">
-        {/* <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/bg-image-2.jpg')})` }}></div> */}
         <div className="image-layer" style={{ backgroundImage: `url(${asset('/assets/images/background/ImageBackground2.avif')})` }}></div>
 
         <div className="auto-container">
@@ -207,15 +196,15 @@ const Services = () => {
             <div className="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
                 <div className="default-form contact-form">
                     <form method="post" action="https://t.commonsupport.com/strnix/contact.html">
-                        <div className="row clearfix">                                    
+                        <div className="row clearfix">
                             <div className="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <input type="text" name="field-name" placeholder="Your Name" required="" />
                             </div>
-                            
+
                             <div className="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <input type="email" name="field-name" placeholder="Email" required="" />
                             </div>
-    
+
                             <div className="col-lg-4 col-md-12 col-sm-12 form-group">
                                 <input type="text" name="field-name" placeholder="Phone" required="" />
                             </div>
@@ -223,12 +212,17 @@ const Services = () => {
                             <div className="col-md-12 col-sm-12 form-group">
                                 <select className="custom-select-box" name="field-name">
                                     <option>Subject / Discuss About Service</option>
-                                    <option>Installation</option>
-                                    <option>Maintenance</option>
-                                    <option>Replacement</option>
+                                    <option>Architectural Design</option>
+                                    <option>Structural Design Engineering</option>
+                                    <option>Mechanical Design Engineering</option>
+                                    <option>Electrical Design Engineering</option>
+                                    <option>Systems Design &amp; Controls</option>
+                                    <option>CAD Design</option>
+                                    <option>Project Management &amp; Procurement</option>
+                                    <option>Feasibility &amp; Risk Assessment</option>
                                 </select>
                             </div>
-    
+
                             <div className="col-md-12 col-sm-12 form-group">
                                 <button type="submit" className="theme-btn btn-style-one"><span className="btn-title"><span className="btn-txt">Send Request</span><span className="btn-icon"><span className="icon flaticon-arrows-11"></span> </span></span></button>
                             </div>

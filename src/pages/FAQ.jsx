@@ -7,7 +7,7 @@ const faqItems = [
   {
     question: 'What services does Greenrock provide?',
     answer:
-      'Greenrock provides architecture, civil engineering, structural engineering, electrical engineering, mechanical engineering, and integrated design services. Bringing these disciplines together helps us produce coordinated, buildable solutions from one accountable team.',
+      'Greenrock provides architectural design; structural, mechanical, and electrical design engineering; systems design with instrumentation and control; CAD design; project management; feasibility and capital estimating; procurement; and risk assessment. These services work together as one coordinated practice for industrial facilities.',
   },
   {
     question: 'Why use one integrated architecture and engineering team?',

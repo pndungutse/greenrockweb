@@ -857,6 +857,10 @@ a:focus {
   gap: 20px;
 }
 
+.gr-disciplines__grid--eight {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .gr-disciplines__card {
   background: var(--gr-white);
   border: 1px solid var(--gr-line);
@@ -930,8 +934,15 @@ a:focus {
   color: var(--gr-green-dark) !important;
 }
 
+@media (max-width: 1199px) {
+  .gr-disciplines__grid--eight {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 991px) {
-  .gr-disciplines__grid {
+  .gr-disciplines__grid,
+  .gr-disciplines__grid--eight {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -941,7 +952,8 @@ a:focus {
 }
 
 @media (max-width: 575px) {
-  .gr-disciplines__grid {
+  .gr-disciplines__grid,
+  .gr-disciplines__grid--eight {
     grid-template-columns: 1fr;
   }
 }

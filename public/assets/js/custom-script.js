@@ -38,7 +38,9 @@
 	}
 
 	//Mobile Nav Hide Show
-	if($('.mobile-menu').length){
+	// React Header owns the mobile drawer (links + open/close state).
+	// Skip template clone/handlers to avoid duplicate menus and broken toggles.
+	if($('.mobile-menu').length && !$('.mobile-menu').attr('id')){
 		
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
@@ -60,6 +62,12 @@
 		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
 			$('body').removeClass('mobile-menu-visible');
 		});
+	} else if ($('.sticky-header .main-menu').length && !$('.sticky-header .main-menu').children().length) {
+		// Still clone desktop nav into sticky header for desktop scroll bar only
+		var stickyMenuContent = $('.main-header .nav-outer .main-menu').html();
+		if (stickyMenuContent) {
+			$('.sticky-header .main-menu').append(stickyMenuContent);
+		}
 	}
 
 	//Search Popup

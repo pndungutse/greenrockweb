@@ -31,10 +31,15 @@
 	
 	headerStyle();
 
-	//Submenu Dropdown Toggle
+	//Submenu Dropdown Toggle (desktop sticky/main only — React owns mobile drawer)
 	if($('.main-header li.dropdown ul').length){
-		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>');
-		
+		$('.main-header .nav-outer .main-menu .navigation li.dropdown, .sticky-header .main-menu .navigation li.dropdown')
+			.not('.mobile-menu li.dropdown')
+			.each(function () {
+				if (!$(this).children('.dropdown-btn').length) {
+					$(this).append('<div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>');
+				}
+			});
 	}
 
 	//Mobile Nav Hide Show

@@ -34,6 +34,13 @@ const Header = () => {
         return () => window.removeEventListener('keydown', onKey);
     }, [mobileOpen]);
 
+    // Auto-expand About when drawer opens on an About/FAQ page
+    useEffect(() => {
+        if (mobileOpen && (pathname === '/about-us' || pathname === '/faq')) {
+            setAboutOpen(true);
+        }
+    }, [mobileOpen, pathname]);
+
     const aboutActive = isCurrent('/about-us') || isCurrent('/faq');
 
     return (
@@ -114,16 +121,8 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="pull-right">
-                            <button
-                                type="button"
-                                className="mobile-nav-toggler"
-                                aria-label="Open menu"
-                                aria-expanded={mobileOpen}
-                                onClick={() => setMobileOpen(true)}
-                            >
-                                <span className="icon flaticon-menu-1" aria-hidden="true"></span>
-                            </button>
-                            <nav className="main-menu clearfix" aria-hidden="true"></nav>
+                            {/* Desktop sticky: full menu (cloned). Mobile uses green-bar toggler only. */}
+                            <nav className="main-menu clearfix"></nav>
                         </div>
                     </div>
                 </div>
@@ -153,22 +152,25 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="menu-outer">
-                            <ul className="navigation">
+                            <ul className="navigation gr-mobile-nav">
                                 <li className={isCurrent('/') ? 'current' : ''}>
                                     <Link to="/" onClick={closeMobile}>Home</Link>
                                 </li>
                                 <li className={`dropdown${aboutActive ? ' current' : ''}${aboutOpen ? ' open' : ''}`}>
-                                    <Link to="/about-us" onClick={closeMobile}>About</Link>
                                     <button
                                         type="button"
-                                        className={`dropdown-btn${aboutOpen ? ' open' : ''}`}
-                                        aria-label="Toggle About submenu"
+                                        className={`gr-mobile-nav__toggle${aboutOpen ? ' is-open' : ''}`}
                                         aria-expanded={aboutOpen}
+                                        aria-controls="gr-mobile-about-sub"
                                         onClick={() => setAboutOpen((v) => !v)}
                                     >
-                                        <span className="fa fa-angle-right" aria-hidden="true"></span>
+                                        <span className="gr-mobile-nav__label">About</span>
+                                        <span className="fa fa-angle-down gr-mobile-nav__icon" aria-hidden="true"></span>
                                     </button>
-                                    <ul style={{ display: aboutOpen ? 'block' : 'none' }}>
+                                    <ul
+                                        id="gr-mobile-about-sub"
+                                        className={`gr-mobile-nav__sub${aboutOpen ? ' is-open' : ''}`}
+                                    >
                                         <li className={isCurrent('/about-us') ? 'current' : ''}>
                                             <Link to="/about-us" onClick={closeMobile}>About Us</Link>
                                         </li>
